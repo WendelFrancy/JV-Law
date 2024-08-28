@@ -15,7 +15,6 @@
 
 body {
   max-width: 1440px;
-  margin: auto;
   font-family: century-gothic;
 }
 
@@ -135,129 +134,144 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   color: #010209;
 }
 
-.mainbody {
-  padding: 0 10rem;
-}
-.mainbody .aboutus {
+.aboutus {
   display: flex;
-  padding: 70px 0;
+  padding: 4rem 10rem;
 }
-.mainbody .aboutus .aboutuscontainer {
+.aboutus .aboutuscontainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.mainbody .aboutus .aboutuscontainer .aboutustexts {
+.aboutus .aboutuscontainer .aboutustexts {
   max-width: 45%;
 }
-.mainbody .aboutus .aboutuscontainer .aboutustexts h2 {
+.aboutus .aboutuscontainer .aboutustexts h2 {
   font-weight: 400;
 }
-.mainbody .aboutus .aboutuscontainer .aboutustexts .line {
+.aboutus .aboutuscontainer .aboutustexts .line {
   margin: 5px 0 0 0;
   width: 65px;
   height: 2px;
   background-color: #dac0a3;
 }
-.mainbody .aboutus .aboutuscontainer .aboutustexts p {
+.aboutus .aboutuscontainer .aboutustexts p {
   margin: 2rem 0;
   line-height: 1.3;
   font-weight: 300;
 }
-.mainbody .aboutus .aboutuscontainer .aboutusimg img {
+.aboutus .aboutuscontainer .aboutusimg img {
   width: 500px;
 }
-.mainbody .specialists .specialistsbackground {
-  position: absolute;
-  left: 0;
-  height: 80vh;
-  width: 100%;
-  z-index: -1;
+
+.specialists .specialistscontent {
   background-color: #f9f9f9;
 }
-.mainbody .specialists .specialistscontent {
-  position: relative;
+.specialists .specialistscontent .specialistscontainer {
+  padding: 3rem 10rem;
 }
-.mainbody .specialists .specialistscontent .specialistscontainer {
-  padding: 50px 0;
-}
-.mainbody .specialists .specialistscontent .specialistscontainer .textcontainer {
+.specialists .specialistscontent .specialistscontainer .textcontainer {
   display: flex;
   align-items: center;
 }
-.mainbody .specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer {
+.specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer {
   display: flex;
   align-items: center;
 }
-.mainbody .specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer h2 {
+.specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer h2 {
   font-weight: 400;
 }
-.mainbody .specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer .line {
+.specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer .line {
   margin: 0px 20px;
   width: 3px;
   height: 50px;
   background-color: #dac0a3;
 }
-.mainbody .specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards {
+.specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards {
   display: flex;
   justify-content: center;
   gap: 4rem;
 }
-.mainbody .specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
+.specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
   width: 35vh;
   filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 }
-.mainbody .specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardswrap {
+.specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardswrap {
   clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
 }
-.mainbody .specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
+.specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
   padding: 1rem 0;
   text-align: center;
   background-color: #1a3a61;
   color: #f9f9f9;
 }
-.mainbody .certified {
+
+.certified {
   display: flex;
   align-items: center;
   gap: 3rem;
   margin-top: 0.3rem;
-  padding: 70px 0;
+  padding: 4rem 10rem;
 }
-.mainbody .certified .certifiedtexts {
+.certified .certifiedtexts {
   display: flex;
   flex-direction: column;
 }
-.mainbody .certified .certifiedtexts h2 {
+.certified .certifiedtexts h2 {
   font-weight: 400;
 }
-.mainbody .certified .certifiedtexts .line {
+.certified .certifiedtexts .line {
   margin: 5px 0 0 0;
   width: 65px;
   height: 2px;
   background-color: #dac0a3;
 }
-.mainbody .certified .certifiedtexts p {
+.certified .certifiedtexts p {
   margin: 2rem 0;
   line-height: 1.3;
   font-weight: 300;
 }
-.mainbody .certified .certifiedcontainer {
+.certified .certifiedcontainer {
   display: flex;
   gap: 3rem;
 }
-.mainbody .certified .certifiedcontainer .certifications {
+.certified .certifiedcontainer .certifications {
   text-align: center;
 }
-.mainbody .certified .certifiedcontainer .certifications img {
+.certified .certifiedcontainer .certifications img {
   height: 160px;
 }
-.mainbody .certified .certifiedcontainer .certifications p {
+.certified .certifiedcontainer .certifications p {
   width: 150px;
   margin-top: 1rem;
   font-size: 14px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  background-color: #f9f9f9;
+  padding: 4rem 10rem;
+}
+.contact .contacttxt h2 {
+  font-weight: 400;
+}
+.contact .contacttxt .line {
+  margin: 5px 0 0 0;
+  width: 65px;
+  height: 2px;
+  background-color: #dac0a3;
+}
+.contact .contacttxt .contactpara {
+  margin: 2rem 0 2rem 0;
+  font-weight: 400;
+}
+.contact .contacttxt .contactsocials {
+  display: flex;
+  gap: 1rem;
 }
 
 

@@ -34,7 +34,6 @@ $font--normal: century-gothic;
 
 body {
   max-width: 1440px;
-  margin: auto;
   font-family: $font--normal;
 }
 
@@ -180,126 +179,17 @@ header {
   }
 }
 
-.mainbody {
-  padding: 0 10rem;
+.aboutus {
+  display: flex;
+  padding: 4rem 10rem;
 
-  .aboutus {
-    display: flex;
-    padding: 70px 0;
-
-    .aboutuscontainer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      .aboutustexts {
-        max-width: 45%;
-
-        h2 {
-          font-weight: 400;
-        }
-
-        .line {
-          @include titleUnderline();
-        }
-
-        p {
-          margin: 2rem 0;
-          line-height: 1.3;
-          font-weight: 300;
-        }
-      }
-
-      .aboutusimg {
-        img {
-          width: 500px;
-        }
-      }
-    }
-
-  }
-
-  .specialists {
-    .specialistsbackground {
-      position: absolute;
-      left: 0;
-      height: 80vh;
-      width: 100%;
-      z-index: -1;
-      background-color: #f9f9f9;
-    }
-
-    .specialistscontent {
-      position: relative;
-
-      .specialistscontainer {
-        padding: 50px 0;
-
-        .textcontainer {
-          display: flex;
-          align-items: center;
-
-          .titlecontainer {
-            display: flex;
-            align-items: center;
-
-            h2 {
-              font-weight: 400;
-            }
-
-            .line {
-              margin: 0px 20px;
-              width: 3px;
-              height: 50px;
-              background-color: #dac0a3;
-            }
-          }
-        }
-
-        .cardcontainer {
-          .specialistscards {
-            display: flex;
-            justify-content: center;
-            gap: 4rem;
-
-            .cards {
-              display: flex;
-              flex-direction: column;
-              padding-top: 60px;
-              width: 35vh;
-              filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
-
-              .cardswrap {
-                clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
-              }
-
-              .cardinfocontainer {
-                padding: 1rem 0;
-                text-align: center;
-                background-color: #1a3a61;
-                color: #f9f9f9;
-              }
-            }
-          }
-        }
-      }
-
-    }
-  }
-
-
-
-
-  .certified {
+  .aboutuscontainer {
     display: flex;
     align-items: center;
-    gap: 3rem;
-    margin-top: 0.3rem;
-    padding: 70px 0;
+    justify-content: space-between;
 
-    .certifiedtexts {
-      display: flex;
-      flex-direction: column;
+    .aboutustexts {
+      max-width: 45%;
 
       h2 {
         font-weight: 400;
@@ -316,24 +206,152 @@ header {
       }
     }
 
-    .certifiedcontainer {
-      display: flex;
-      gap: 3rem;
+    .aboutusimg {
+      img {
+        width: 500px;
+      }
+    }
+  }
 
-      .certifications {
-        text-align: center;
-        img {
-          height: 160px;
+}
+
+.specialists {
+  // .specialistsbackground {
+  //   position: absolute;
+  //   left: 0;
+  //   height: 80vh;
+  //   width: 100%;
+  //   z-index: -1;
+  //   background-color: #f9f9f9;
+  // }
+
+  .specialistscontent {
+    background-color: #f9f9f9;
+
+    .specialistscontainer {
+      padding: 3rem 10rem;
+
+      .textcontainer {
+        display: flex;
+        align-items: center;
+
+        .titlecontainer {
+          display: flex;
+          align-items: center;
+
+          h2 {
+            font-weight: 400;
+          }
+
+          .line {
+            margin: 0px 20px;
+            width: 3px;
+            height: 50px;
+            background-color: #dac0a3;
+          }
         }
-        p{
-          width: 150px;
-          margin-top: 1rem;
-          font-size: 14px;
+      }
+
+      .cardcontainer {
+        .specialistscards {
+          display: flex;
+          justify-content: center;
+          gap: 4rem;
+
+          .cards {
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            width: 35vh;
+            filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
+
+            .cardswrap {
+              clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+            }
+
+            .cardinfocontainer {
+              padding: 1rem 0;
+              text-align: center;
+              background-color: #1a3a61;
+              color: #f9f9f9;
+            }
+          }
         }
+      }
+    }
+
+  }
+}
+
+.certified {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 0.3rem;
+  padding: 4rem 10rem;
+
+  .certifiedtexts {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-weight: 400;
+    }
+
+    .line {
+      @include titleUnderline();
+    }
+
+    p {
+      margin: 2rem 0;
+      line-height: 1.3;
+      font-weight: 300;
+    }
+  }
+
+  .certifiedcontainer {
+    display: flex;
+    gap: 3rem;
+
+    .certifications {
+      text-align: center;
+
+      img {
+        height: 160px;
+      }
+
+      p {
+        width: 150px;
+        margin-top: 1rem;
+        font-size: 14px;
       }
     }
   }
 }
+
+.contact{
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  background-color: #f9f9f9;
+  padding: 4rem 10rem;
+  .contacttxt{
+    h2{
+      font-weight: 400;
+    }
+    .line {
+      @include titleUnderline();
+    }
+    .contactpara{
+      margin: 2rem 0 2rem 0;
+      font-weight: 400;
+    }
+    .contactsocials{
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
+
 
 
 
