@@ -350,9 +350,17 @@ header {
       gap: 1rem;
     }
   }
+  .formcontainer{
+    .formboxback{
+      padding: 1rem 1rem 0 0;
+      background-color: rgb(254, 199, 1);
+    }
+  }
 }
 
-
+footer{
+  height: 50vh;
+}
 
 
 
