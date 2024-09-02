@@ -45,8 +45,6 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-
-
   }
 
   .menucontainer {
@@ -181,7 +179,7 @@ header {
 
 .aboutus {
   display: flex;
-  padding: 4rem 10rem;
+  padding: 4rem 8rem;
 
   .aboutuscontainer {
     display: flex;
@@ -229,7 +227,7 @@ header {
     background-color: #f9f9f9;
 
     .specialistscontainer {
-      padding: 3rem 10rem;
+      padding: 3rem 8rem;
 
       .textcontainer {
         display: flex;
@@ -288,7 +286,7 @@ header {
   align-items: center;
   gap: 3rem;
   margin-top: 0.3rem;
-  padding: 4rem 10rem;
+  padding: 4rem 8rem;
 
   .certifiedtexts {
     display: flex;
@@ -331,10 +329,10 @@ header {
 
 .contact{
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 50% 1fr;
   background-color: #f9f9f9;
-  padding: 1.5rem 10rem 4rem 10rem;
+  padding: 1.5rem 8rem 4rem 8rem;
   align-items: center;
   .contacttxt{
     padding: 0 2rem 0 0;

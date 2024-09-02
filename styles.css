@@ -136,7 +136,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 
 .aboutus {
   display: flex;
-  padding: 4rem 10rem;
+  padding: 4rem 8rem;
 }
 .aboutus .aboutuscontainer {
   display: flex;
@@ -168,7 +168,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   background-color: #f9f9f9;
 }
 .specialists .specialistscontent .specialistscontainer {
-  padding: 3rem 10rem;
+  padding: 3rem 8rem;
 }
 .specialists .specialistscontent .specialistscontainer .textcontainer {
   display: flex;
@@ -214,7 +214,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   align-items: center;
   gap: 3rem;
   margin-top: 0.3rem;
-  padding: 4rem 10rem;
+  padding: 4rem 8rem;
 }
 .certified .certifiedtexts {
   display: flex;
@@ -252,10 +252,10 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 
 .contact {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 50% 1fr;
   background-color: #f9f9f9;
-  padding: 1.5rem 10rem 4rem 10rem;
+  padding: 1.5rem 8rem 4rem 8rem;
   align-items: center;
 }
 .contact .contacttxt {
