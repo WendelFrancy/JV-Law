@@ -216,38 +216,72 @@
                     Nossa equipe de advogados oferece atendimento especializado e rápido, garantindo a satisfação do
                     cliente.
                     <br><br>
-                    Entre em contato através de nosso formulário ou das redes sociais
+                    Entre em contato através de nosso formulário ou das<br> redes sociais
                 </p>
-                <div class="contactsocials">
-                    <img src="assets/WebImages/Ph2one.png" alt="Telefone">
-                    <p class="socialstxt">
-                        +55 55 55555-5555
-                    </p>
-                </div>
-                <div class="contactsocials">
-                    <img src="assets/WebImages/e-mail.png" alt="E-mail">
-                    <p class="socialstxt">
-                        E-mail
-                    </p>
-                </div>
-                <div class="contactsocials">
-                    <img src="assets/WebImages/Instagram .png" alt="NDPE">
-                    <p class="socialstxt">
-                        Não dá pra entender
-                    </p>
+                <div class="contactsocialscontainer">
+                    <div class="contactsocials">
+                        <div class="socialbox">
+                            <img class="socialphone" src="assets/WebImages/Phone.png" alt="Telefone">
+                        </div>
+                        <p class="socialstxt">
+                            +55 55 55555-5555
+                        </p>
+                    </div>
+                    <div class="contactsocials">
+                        <div class="socialbox">
+                            <img src="assets/WebImages/e-mail.png" alt="E-mail">
+                        </div>
+                        <p class="socialstxt">
+                            contato@jvadvocacia.com
+                        </p>
+                    </div>
+                    <div class="contactsocials">
+                        <div class="socialbox">
+                            <img src="assets/WebImages/Instagram .png" alt="Instagram">
+                        </div>
+                        <p class="socialstxt">
+                            @jvadvocacia
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="formcontainer">
-                <div class="formboxback">
+                <img class="formflag" src="assets/WebImages/Form Flag.png" alt="Flag">
+                <div class="formbox">
+                    <img class="formlogo" src="assets/WebImages/Form Logo.png" alt="">
                     <form action="submit">
-                        <h3>Formulário</h3>
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+                        <div class="formtitle">
+                            <h3>Fale com um especialista</h3>
+                        </div>
+                        <div class="forminputs">
+                            <div class="forminput inptname">
+                                <label class="namelabel lbl" for="name">
+                                    <img class="charimg" src="assets/WebImages/CHAR.png" alt="Forma humana">
+                                </label>
+                                <input class="inputname inptbig" type="text" name="especname" id="name" placeholder="Nome Completo">
+                            </div>
+
+                            <div class="forminput inptphone">
+                                <label class="phonelabel lbl" for="phone">
+                                    <img class="phoneimg" src="assets/WebImages/Phone.png" alt="Telefone">
+                                </label>
+                                <input class="inputphone inpt" type="text" name="especphone" id="phone" placeholder="Telefone">
+                            </div>
+                            <div class="forminput inptemail">
+                                <label class="emaillabel lbl" for="">
+                                    <img class="emailimg" src="assets/WebImages/E-mail.png" alt="E-mail">
+                                </label>
+                                <input class="inputemail inpt" type="text" name="especemail" placeholder="E-mail">
+                            </div>
+                            <div class="forminput inptassunto">
+                                <input class="inputassunto inptbig" type="text" name="especassunto" placeholder="Assunto">
+                            </div>
+                            <textarea class="txtarea" name="especmsg" cols="50" rows="10" maxlength="600">
+                            </textarea>
+                            <div class="inputsubmit">
+                                <input class="btnsubmit" type="submit"></input>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

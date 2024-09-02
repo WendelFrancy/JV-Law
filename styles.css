@@ -14,8 +14,8 @@
 }
 
 body {
-  max-width: 1440px;
   font-family: century-gothic;
+  letter-spacing: 0.3px;
 }
 
 header {
@@ -252,9 +252,14 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 
 .contact {
   display: grid;
+  gap: 2rem;
   grid-template-columns: 50% 1fr;
   background-color: #f9f9f9;
-  padding: 4rem 10rem;
+  padding: 1.5rem 10rem 4rem 10rem;
+  align-items: center;
+}
+.contact .contacttxt {
+  padding: 0 2rem 0 0;
 }
 .contact .contacttxt h2 {
   font-weight: 400;
@@ -269,13 +274,146 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   margin: 2rem 0 2rem 0;
   font-weight: 400;
 }
-.contact .contacttxt .contactsocials {
+.contact .contacttxt .contactsocialscontainer {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
-.contact .formcontainer .formboxback {
-  padding: 1rem 1rem 0 0;
-  background-color: rgb(254, 199, 1);
+.contact .contacttxt .contactsocialscontainer .contactsocials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact .contacttxt .contactsocialscontainer .contactsocials .socialbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 4rem;
+  border: solid 1px #f5d8b7;
+}
+.contact .contacttxt .contactsocialscontainer .contactsocials .socialbox .socialphone {
+  height: 25px;
+}
+.contact .formcontainer {
+  z-index: 1;
+}
+.contact .formcontainer .formflag {
+  position: relative;
+  top: 40px;
+  left: 3.5%;
+  height: 100px;
+}
+.contact .formcontainer .formbox {
+  position: relative;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  background-color: #ffffff;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.151);
+}
+.contact .formcontainer .formbox .formlogo {
+  position: relative;
+  margin: 30% 0 0 28%;
+  height: 35px;
+}
+.contact .formcontainer .formbox form {
+  color: #1a3a61;
+}
+.contact .formcontainer .formbox form .formtitle {
+  margin-top: 2rem;
+  text-align: center;
+}
+.contact .formcontainer .formbox form .formtitle h3 {
+  font-weight: 800;
+}
+.contact .formcontainer .formbox form .forminputs {
+  display: grid;
+  grid-template-areas: "nome nome" "telefone email" "assunto assunto" "txtarea txtarea" ". btn";
+}
+.contact .formcontainer .formbox form .forminputs .inptname {
+  grid-area: nome;
+}
+.contact .formcontainer .formbox form .forminputs .inptphone {
+  grid-area: telefone;
+}
+.contact .formcontainer .formbox form .forminputs .inptemail {
+  grid-area: email;
+}
+.contact .formcontainer .formbox form .forminputs .inptassunto {
+  grid-area: assunto;
+}
+.contact .formcontainer .formbox form .forminputs .forminput {
+  display: block;
+  margin-top: 1rem;
+}
+.contact .formcontainer .formbox form .forminputs .forminput .lbl img {
+  z-index: 1;
+  position: absolute;
+  height: 1rem;
+}
+.contact .formcontainer .formbox form .forminputs .forminput .lbl .charimg {
+  top: 16%;
+  left: 17.5%;
+}
+.contact .formcontainer .formbox form .forminputs .forminput .lbl .phoneimg {
+  top: 27%;
+  left: 17.5%;
+}
+.contact .formcontainer .formbox form .forminputs .forminput .lbl .emailimg {
+  height: 0.9rem;
+  top: 27.4%;
+  right: 37%;
+}
+.contact .formcontainer .formbox form .forminputs .forminput .inpt, .contact .formcontainer .formbox form .forminputs .forminput .inptbig {
+  position: relative;
+  border: solid 2px #f5d8b7;
+  height: 40px;
+  padding: 0 0 0 2.5rem;
+}
+.contact .formcontainer .formbox form .forminputs .forminput .inpt::placeholder, .contact .formcontainer .formbox form .forminputs .forminput .inptbig::placeholder {
+  font-family: century-gothic;
+  color: #1a3a61;
+}
+.contact .formcontainer .formbox form .forminputs .forminput .inputassunto {
+  padding: 0 0.8rem;
+}
+.contact .formcontainer .formbox form .forminputs .forminput .inptbig {
+  width: 95%;
+}
+.contact .formcontainer .formbox form .forminputs .forminput .inpt {
+  width: 90%;
+}
+.contact .formcontainer .formbox form .forminputs .txtarea {
+  grid-area: txtarea;
+  resize: none;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: solid 2px #f5d8b7;
+  width: 95%;
+}
+.contact .formcontainer .formbox form .forminputs::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -6px;
+  right: -6px;
+  background-color: #f4d1a2;
+}
+.contact .formcontainer .formbox form .forminputs .inputsubmit {
+  grid-area: btn;
+}
+.contact .formcontainer .formbox form .forminputs .inputsubmit .btnsubmit {
+  padding: 1rem 0;
+  width: 90%;
+  margin: 1rem 0 2rem 0;
+  background-color: #1a3a61;
+  font-family: century-gothic;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+  border: none;
 }
 
 footer {
