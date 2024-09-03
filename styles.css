@@ -252,8 +252,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 
 .contact {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: 50% 1fr;
+  grid-template-columns: 1fr 1fr;
   background-color: #f9f9f9;
   padding: 1.5rem 8rem 4rem 8rem;
   align-items: center;
@@ -300,7 +299,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 }
 .contact .formcontainer .formflag {
   position: relative;
-  top: 40px;
+  top: 45px;
   left: 3.5%;
   height: 100px;
 }
@@ -320,7 +319,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   color: #1a3a61;
 }
 .contact .formcontainer .formbox form .formtitle {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 .contact .formcontainer .formbox form .formtitle h3 {
@@ -343,39 +342,37 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   grid-area: assunto;
 }
 .contact .formcontainer .formbox form .forminputs .forminput {
-  display: block;
+  display: flex;
   margin-top: 1rem;
+}
+.contact .formcontainer .formbox form .forminputs .forminput .lbl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact .formcontainer .formbox form .forminputs .forminput .lbl img {
   z-index: 1;
   position: absolute;
   height: 1rem;
-}
-.contact .formcontainer .formbox form .forminputs .forminput .lbl .charimg {
-  top: 16%;
-  left: 17.5%;
-}
-.contact .formcontainer .formbox form .forminputs .forminput .lbl .phoneimg {
-  top: 27%;
-  left: 17.5%;
-}
-.contact .formcontainer .formbox form .forminputs .forminput .lbl .emailimg {
-  height: 0.9rem;
-  top: 27.4%;
-  right: 37%;
+  margin-left: 2.2rem;
 }
 .contact .formcontainer .formbox form .forminputs .forminput .inpt, .contact .formcontainer .formbox form .forminputs .forminput .inptbig {
   position: relative;
   border: solid 2px #f5d8b7;
-  height: 40px;
-  padding: 0 0 0 2.5rem;
+  font-family: century-gothic;
+  font-size: 0.8rem;
+  color: #1a3a61;
+  letter-spacing: 0.5px;
+  padding: 0.4rem 0.5rem 0.4rem 2rem;
+  outline: none;
 }
 .contact .formcontainer .formbox form .forminputs .forminput .inpt::placeholder, .contact .formcontainer .formbox form .forminputs .forminput .inptbig::placeholder {
   font-family: century-gothic;
+  font-size: 0.8rem;
   color: #1a3a61;
 }
 .contact .formcontainer .formbox form .forminputs .forminput .inputassunto {
-  padding: 0 0.8rem;
+  padding: 0.4rem 0.5rem 0.4rem 0.5rem;
 }
 .contact .formcontainer .formbox form .forminputs .forminput .inptbig {
   width: 95%;
@@ -386,9 +383,13 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 .contact .formcontainer .formbox form .forminputs .txtarea {
   grid-area: txtarea;
   resize: none;
+  outline: none;
+  letter-spacing: 0.5px;
   margin-top: 1rem;
   padding: 0.5rem;
   border: solid 2px #f5d8b7;
+  color: #1a3a61;
+  font-family: century-gothic;
   width: 95%;
 }
 .contact .formcontainer .formbox form .forminputs::after {
@@ -407,7 +408,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 .contact .formcontainer .formbox form .forminputs .inputsubmit .btnsubmit {
   padding: 1rem 0;
   width: 90%;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 1.5rem 0;
   background-color: #1a3a61;
   font-family: century-gothic;
   font-weight: 600;
