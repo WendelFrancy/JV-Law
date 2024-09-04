@@ -418,7 +418,56 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 }
 
 footer {
-  height: 50vh;
+  padding: 0 8rem;
+  background-color: #1a3a61;
+  color: #fff;
+}
+footer .clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .clients .clientsbox {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+footer .clients .clientsbox img {
+  height: 3rem;
+  opacity: 0.8;
+}
+footer .clients .clientsline {
+  margin: 2rem 0;
+  background-color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 1px;
+}
+footer .addresscontainer {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+footer .addresscontainer .address h4 {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+footer .addresscontainer .address p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+footer .footnotes {
+  display: flex;
+  justify-content: space-around;
+  gap: 10rem;
+  padding: 2rem 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+footer .footnotes .rightlink {
+  display: flex;
+  flex-direction: column;
 }
 
 

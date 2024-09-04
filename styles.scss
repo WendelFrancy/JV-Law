@@ -497,7 +497,58 @@ header {
 }
 
 footer{
-  height: 50vh;
+  padding: 0 8rem;
+  background-color: #1a3a61;
+  color: #fff;
+  .clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .clientsbox{
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin-top: 2rem;
+      img{
+        height: 3rem;
+        opacity: 0.8;
+      }
+    }
+    .clientsline{
+      margin: 2rem 0;
+      background-color: #fff;
+      opacity: 0.8;
+      width: 100%;
+      height: 1px;
+    }
+  }
+  .addresscontainer{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    .address{
+      h4{
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+      p{
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+    }
+  }
+  .footnotes{
+    display: flex;
+    justify-content: space-around;
+    gap: 10rem;
+    padding: 2rem 0;
+    font-size: 0.8rem;
+    font-weight: 300;
+    .rightlink{
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 
