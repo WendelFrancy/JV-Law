@@ -65,7 +65,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 .home {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 4rem;
   height: 400px;
 }
 .home .hometextcontainer {
@@ -136,7 +136,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 
 .aboutus {
   display: flex;
-  padding: 4rem 8rem;
+  padding: 4rem 10%;
 }
 .aboutus .aboutuscontainer {
   display: flex;
@@ -168,7 +168,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   background-color: #f9f9f9;
 }
 .specialists .specialistscontent .specialistscontainer {
-  padding: 3rem 8rem;
+  padding: 3rem 10%;
 }
 .specialists .specialistscontent .specialistscontainer .textcontainer {
   display: flex;
@@ -208,13 +208,16 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   background-color: #1a3a61;
   color: #f9f9f9;
 }
+.specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer p {
+  font-size: 0.8rem;
+}
 
 .certified {
   display: flex;
   align-items: center;
   gap: 3rem;
   margin-top: 0.3rem;
-  padding: 4rem 8rem;
+  padding: 4rem 10%;
 }
 .certified .certifiedtexts {
   display: flex;
@@ -242,7 +245,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   text-align: center;
 }
 .certified .certifiedcontainer .certifications img {
-  height: 160px;
+  height: 20vh;
 }
 .certified .certifiedcontainer .certifications p {
   width: 150px;
@@ -254,7 +257,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #f9f9f9;
-  padding: 1.5rem 8rem 4rem 8rem;
+  padding: 1.5rem 10% 4rem 10%;
   align-items: center;
 }
 .contact .contacttxt {
@@ -356,7 +359,8 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   height: 1rem;
   margin-left: 2.2rem;
 }
-.contact .formcontainer .formbox form .forminputs .forminput .inpt, .contact .formcontainer .formbox form .forminputs .forminput .inptbig {
+.contact .formcontainer .formbox form .forminputs .forminput .inpt,
+.contact .formcontainer .formbox form .forminputs .forminput .inptbig {
   position: relative;
   border: solid 2px #f5d8b7;
   font-family: century-gothic;
@@ -366,7 +370,8 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   padding: 0.4rem 0.5rem 0.4rem 2rem;
   outline: none;
 }
-.contact .formcontainer .formbox form .forminputs .forminput .inpt::placeholder, .contact .formcontainer .formbox form .forminputs .forminput .inptbig::placeholder {
+.contact .formcontainer .formbox form .forminputs .forminput .inpt::placeholder,
+.contact .formcontainer .formbox form .forminputs .forminput .inptbig::placeholder {
   font-family: century-gothic;
   font-size: 0.8rem;
   color: #1a3a61;
@@ -418,8 +423,8 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 }
 
 footer {
-  padding: 0 8rem;
-  background-color: #1a3a61;
+  padding: 2rem 10%;
+  background-image: url(assets/WebImages/footerbg.png);
   color: #fff;
 }
 footer .clients {
@@ -427,47 +432,62 @@ footer .clients {
   flex-direction: column;
   align-items: center;
 }
+footer .clients h4 {
+  text-align: center;
+  font-weight: 300;
+}
 footer .clients .clientsbox {
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
   margin-top: 2rem;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.7);
+  padding: 0 0 2rem 0;
 }
 footer .clients .clientsbox img {
   height: 3rem;
-  opacity: 0.8;
+  opacity: 0.9;
 }
-footer .clients .clientsline {
-  margin: 2rem 0;
-  background-color: #fff;
-  opacity: 0.8;
-  width: 100%;
-  height: 1px;
+footer .clients .clientsbox .airbnb {
+  height: 2rem;
 }
-footer .addresscontainer {
+footer .footinfos {
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  flex-direction: column;
+  padding: 0 2.5%;
 }
-footer .addresscontainer .address h4 {
-  font-size: 0.9rem;
-  font-weight: 300;
-}
-footer .addresscontainer .address p {
-  font-size: 0.9rem;
-  font-weight: 300;
-}
-footer .footnotes {
+footer .footinfos .addresscontainer {
   display: flex;
-  justify-content: space-around;
-  gap: 10rem;
-  padding: 2rem 0;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+footer .footinfos .addresscontainer .address h4 {
   font-size: 0.8rem;
   font-weight: 300;
 }
-footer .footnotes .rightlink {
+footer .footinfos .addresscontainer .address p {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+footer .footinfos .footnotes {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 0 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+footer .footinfos .footnotes .rightreserved a {
+  text-decoration: none;
+  color: #dac0a3;
+}
+footer .footinfos .footnotes .terms {
+  display: flex;
+  gap: 1rem;
+}
+footer .footinfos .footnotes .terms a {
+  color: #dac0a3;
 }
 
 
