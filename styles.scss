@@ -24,7 +24,20 @@
 
 $font--normal: century-gothic;
 
-
+.hidden{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1.2s;
+}
+@media (prefers-reduced-motion) {
+  .hidden{
+    transition: none;
+  }
+}
+.show{
+  opacity: 1;
+  transform: translateY(0);
+}
 
 * {
   padding: 0;
@@ -177,7 +190,7 @@ header {
   }
 }
 
-.aboutus {
+#aboutus {
   display: flex;
   padding: 4rem 10%;
 
@@ -213,7 +226,7 @@ header {
 
 }
 
-.specialists {
+#specialists {
 
   .specialistscontent {
     background-color: #f9f9f9;
@@ -322,7 +335,7 @@ header {
   }
 }
 
-.contact {
+#contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #f9f9f9;
@@ -490,6 +503,11 @@ header {
             color: #1a3a61;
             font-family: $font--normal;
             width: 95%;
+            &::placeholder {
+                font-family: $font--normal;
+                font-size: 0.8rem;
+                color: #1a3a61;
+              }
           }
 
           &::after {

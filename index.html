@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mobile.css">
+    <script defer src="app.js"></script>
     <title>JV Advocacia</title>
 </head>
 
@@ -26,13 +27,13 @@
                             <a href="#">Início</a>
                         </li>
                         <li class="menutxt">
-                            <a href="#">Sobre nós</a>
+                            <a href="#aboutus">Sobre nós</a>
                         </li>
                         <li class="menutxt">
-                            <a href="#">Especialistas</a>
+                            <a href="#specialists">Especialistas</a>
                         </li>
                         <li class="menutxt">
-                            <a href="#">Contato</a>
+                            <a href="#contact">Contato</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,8 +43,8 @@
     <main>
         <section class="home">
             <div class="hometextcontainer">
-                <h1>Advocacia Especializada</h1>
-                <p>Com responsabilidade e foco,  oferecemos soluções<br> jurídicas eficazes, atendimento  e compromisso<br>
+                <h1 class="hidden">Advocacia Especializada</h1>
+                <p class="hidden">Com responsabilidade e foco,  oferecemos soluções<br> jurídicas eficazes, atendimento  e compromisso<br>
                    total com a excelência e resultados<br> para nossos clientes. </p>
             </div>
         </section>
@@ -94,7 +95,7 @@
                 </div>
             </div>
         </section>
-        <section class="aboutus">
+        <section id="aboutus">
             <div class="aboutuscontainer">
                 <div class="aboutustexts">
                     <h2>Nosso Escritório</h2>
@@ -119,7 +120,7 @@
                 </div>
             </div>
         </section>
-        <div class="specialists">
+        <div id="specialists">
             <div class="specialistsbackground"></div>
             <section class="specialistscontent">
                 <div class="specialistscontainer">
@@ -203,7 +204,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact">
             <div class="contacttxt">
                 <h2>
                     Contato
@@ -221,7 +222,7 @@
                             <img class="socialphone" src="assets/WebImages/Phone.png" alt="Telefone">
                         </div>
                         <p class="socialstxt">
-                            +55 55 55555-5555
+                            +55 55 95555-5555
                         </p>
                     </div>
                     <div class="contactsocials">
@@ -276,8 +277,7 @@
                                 <input class="inputassunto inptbig" type="text" name="especassunto"
                                     placeholder="Assunto" maxlength="39">
                             </div>
-                            <textarea class="txtarea" name="especmsg" cols="50" rows="7" maxlength="300">
-                            </textarea>
+                            <textarea placeholder="Escreva sua mensagem" class="txtarea" name="especmsg" cols="50" rows="7" maxlength="300"></textarea>
                             <div class="inputsubmit">
                                 <input class="btnsubmit" type="submit"></input>
                             </div>
