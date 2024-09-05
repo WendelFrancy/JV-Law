@@ -534,6 +534,10 @@ header {
               color: white;
               letter-spacing: 1px;
               border: none;
+              cursor: pointer;
+              &:hover{
+                background-color: #132944;
+              }
             }
           }
         }
@@ -611,6 +615,9 @@ footer {
         a{
           text-decoration: none;
           color: #dac0a3;
+          &:hover{
+            color: #bca48b;
+          }
         }
       }
       .terms{
@@ -618,6 +625,9 @@ footer {
         gap: 1rem;
         a{
           color: #dac0a3;
+          &:hover{
+            color: #bca48b;
+          }
         }
       }
     }

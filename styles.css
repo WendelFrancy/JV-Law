@@ -441,6 +441,10 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   color: white;
   letter-spacing: 1px;
   border: none;
+  cursor: pointer;
+}
+#contact .formcontainer .formbox form .forminputs .inputsubmit .btnsubmit:hover {
+  background-color: #132944;
 }
 
 footer {
@@ -503,12 +507,18 @@ footer .footinfos .footnotes .rightreserved a {
   text-decoration: none;
   color: #dac0a3;
 }
+footer .footinfos .footnotes .rightreserved a:hover {
+  color: #bca48b;
+}
 footer .footinfos .footnotes .terms {
   display: flex;
   gap: 1rem;
 }
 footer .footinfos .footnotes .terms a {
   color: #dac0a3;
+}
+footer .footinfos .footnotes .terms a:hover {
+  color: #bca48b;
 }
 
 

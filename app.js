@@ -1,3 +1,10 @@
+
+const btnsubmit = document.querySelector('.btnsubmit');
+
+btnsubmit.addEventListener('click', (e) => {
+    e.preventDefault();
+})
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
