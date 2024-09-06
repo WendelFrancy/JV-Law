@@ -24,16 +24,16 @@
 
 $font--normal: century-gothic;
 
+html{
+  scroll-behavior: smooth;
+}
+
 .hidden{
   opacity: 0;
   transform: translateY(100%);
-  transition: all 1.2s;
+  transition: all 1s;
 }
-@media (prefers-reduced-motion) {
-  .hidden{
-    transition: none;
-  }
-}
+
 .show{
   opacity: 1;
   transform: translateY(0);
@@ -91,13 +91,16 @@ header {
         .menulist {
           display: flex;
           list-style: none;
-          gap: 6rem;
+          gap: 4rem;
 
           li {
             a {
               font-size: 1rem;
               color: #ffffff;
               text-decoration: none;
+              &:hover{
+                color: #ffffffc7;
+              }
             }
           }
         }
@@ -289,7 +292,7 @@ header {
   }
 }
 
-.certified {
+#certified {
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -546,6 +549,22 @@ header {
   }
 }
 
+.gotop{
+  position: fixed;
+  top: 85vh;
+  right: 30px;
+  .gotopbox{
+    display: grid;
+    place-items: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    img{
+      height: 25px;
+    }
+  }
+}
+
 footer {
   padding: 2rem 10%;
   background-image: url(assets/WebImages/footerbg.png);
@@ -577,6 +596,10 @@ footer {
 
       .airbnb {
         height: 2rem;
+      }
+
+      .adidas{
+        height: 4rem;
       }
     }
   }
