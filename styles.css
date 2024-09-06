@@ -7,6 +7,22 @@
   font-weight: 400;
   font-stretch: normal;
 }
+.hidden {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1.2s;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -65,7 +81,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 .home {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 4rem;
   height: 400px;
 }
 .home .hometextcontainer {
@@ -134,79 +150,82 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   color: #010209;
 }
 
-.aboutus {
+#aboutus {
   display: flex;
-  padding: 4rem 8rem;
+  padding: 4rem 10%;
 }
-.aboutus .aboutuscontainer {
+#aboutus .aboutuscontainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.aboutus .aboutuscontainer .aboutustexts {
+#aboutus .aboutuscontainer .aboutustexts {
   max-width: 45%;
 }
-.aboutus .aboutuscontainer .aboutustexts h2 {
+#aboutus .aboutuscontainer .aboutustexts h2 {
   font-weight: 400;
 }
-.aboutus .aboutuscontainer .aboutustexts .line {
+#aboutus .aboutuscontainer .aboutustexts .line {
   margin: 5px 0 0 0;
   width: 65px;
   height: 2px;
   background-color: #dac0a3;
 }
-.aboutus .aboutuscontainer .aboutustexts p {
+#aboutus .aboutuscontainer .aboutustexts p {
   margin: 2rem 0;
   line-height: 1.3;
   font-weight: 300;
 }
-.aboutus .aboutuscontainer .aboutusimg img {
+#aboutus .aboutuscontainer .aboutusimg img {
   width: 500px;
 }
 
-.specialists .specialistscontent {
+#specialists .specialistscontent {
   background-color: #f9f9f9;
 }
-.specialists .specialistscontent .specialistscontainer {
-  padding: 3rem 8rem;
+#specialists .specialistscontent .specialistscontainer {
+  padding: 3rem 10%;
 }
-.specialists .specialistscontent .specialistscontainer .textcontainer {
+#specialists .specialistscontent .specialistscontainer .textcontainer {
   display: flex;
   align-items: center;
 }
-.specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer {
+#specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer {
   display: flex;
   align-items: center;
 }
-.specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer h2 {
+#specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer h2 {
   font-weight: 400;
 }
-.specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer .line {
+#specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer .line {
   margin: 0px 20px;
   width: 3px;
   height: 50px;
   background-color: #dac0a3;
 }
-.specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards {
+#specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards {
   display: flex;
   justify-content: center;
   gap: 4rem;
 }
-.specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
+#specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
   width: 35vh;
   filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 }
-.specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardswrap {
+#specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardswrap {
   clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
 }
-.specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
+#specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
   padding: 1rem 0;
   text-align: center;
   background-color: #1a3a61;
   color: #f9f9f9;
+}
+#specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer p {
+  font-size: 0.8rem;
 }
 
 .certified {
@@ -214,7 +233,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   align-items: center;
   gap: 3rem;
   margin-top: 0.3rem;
-  padding: 4rem 8rem;
+  padding: 4rem 10%;
 }
 .certified .certifiedtexts {
   display: flex;
@@ -242,7 +261,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   text-align: center;
 }
 .certified .certifiedcontainer .certifications img {
-  height: 160px;
+  height: 20vh;
 }
 .certified .certifiedcontainer .certifications p {
   width: 150px;
@@ -250,40 +269,40 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   font-size: 14px;
 }
 
-.contact {
+#contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #f9f9f9;
-  padding: 1.5rem 8rem 4rem 8rem;
+  padding: 1.5rem 10% 4rem 10%;
   align-items: center;
 }
-.contact .contacttxt {
+#contact .contacttxt {
   padding: 0 2rem 0 0;
 }
-.contact .contacttxt h2 {
+#contact .contacttxt h2 {
   font-weight: 400;
 }
-.contact .contacttxt .line {
+#contact .contacttxt .line {
   margin: 5px 0 0 0;
   width: 65px;
   height: 2px;
   background-color: #dac0a3;
 }
-.contact .contacttxt .contactpara {
+#contact .contacttxt .contactpara {
   margin: 2rem 0 2rem 0;
   font-weight: 400;
 }
-.contact .contacttxt .contactsocialscontainer {
+#contact .contacttxt .contactsocialscontainer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.contact .contacttxt .contactsocialscontainer .contactsocials {
+#contact .contacttxt .contactsocialscontainer .contactsocials {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.contact .contacttxt .contactsocialscontainer .contactsocials .socialbox {
+#contact .contacttxt .contactsocialscontainer .contactsocials .socialbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,72 +310,73 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   width: 4rem;
   border: solid 1px #f5d8b7;
 }
-.contact .contacttxt .contactsocialscontainer .contactsocials .socialbox .socialphone {
+#contact .contacttxt .contactsocialscontainer .contactsocials .socialbox .socialphone {
   height: 25px;
 }
-.contact .formcontainer {
+#contact .formcontainer {
   z-index: 1;
 }
-.contact .formcontainer .formflag {
+#contact .formcontainer .formflag {
   position: relative;
   top: 45px;
   left: 3.5%;
   height: 100px;
 }
-.contact .formcontainer .formbox {
+#contact .formcontainer .formbox {
   position: relative;
   display: grid;
   grid-template-columns: 15% 85%;
   background-color: #ffffff;
   box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.151);
 }
-.contact .formcontainer .formbox .formlogo {
+#contact .formcontainer .formbox .formlogo {
   position: relative;
   margin: 30% 0 0 28%;
   height: 35px;
 }
-.contact .formcontainer .formbox form {
+#contact .formcontainer .formbox form {
   color: #1a3a61;
 }
-.contact .formcontainer .formbox form .formtitle {
+#contact .formcontainer .formbox form .formtitle {
   margin-top: 1.5rem;
   text-align: center;
 }
-.contact .formcontainer .formbox form .formtitle h3 {
+#contact .formcontainer .formbox form .formtitle h3 {
   font-weight: 800;
 }
-.contact .formcontainer .formbox form .forminputs {
+#contact .formcontainer .formbox form .forminputs {
   display: grid;
   grid-template-areas: "nome nome" "telefone email" "assunto assunto" "txtarea txtarea" ". btn";
 }
-.contact .formcontainer .formbox form .forminputs .inptname {
+#contact .formcontainer .formbox form .forminputs .inptname {
   grid-area: nome;
 }
-.contact .formcontainer .formbox form .forminputs .inptphone {
+#contact .formcontainer .formbox form .forminputs .inptphone {
   grid-area: telefone;
 }
-.contact .formcontainer .formbox form .forminputs .inptemail {
+#contact .formcontainer .formbox form .forminputs .inptemail {
   grid-area: email;
 }
-.contact .formcontainer .formbox form .forminputs .inptassunto {
+#contact .formcontainer .formbox form .forminputs .inptassunto {
   grid-area: assunto;
 }
-.contact .formcontainer .formbox form .forminputs .forminput {
+#contact .formcontainer .formbox form .forminputs .forminput {
   display: flex;
   margin-top: 1rem;
 }
-.contact .formcontainer .formbox form .forminputs .forminput .lbl {
+#contact .formcontainer .formbox form .forminputs .forminput .lbl {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact .formcontainer .formbox form .forminputs .forminput .lbl img {
+#contact .formcontainer .formbox form .forminputs .forminput .lbl img {
   z-index: 1;
   position: absolute;
   height: 1rem;
   margin-left: 2.2rem;
 }
-.contact .formcontainer .formbox form .forminputs .forminput .inpt, .contact .formcontainer .formbox form .forminputs .forminput .inptbig {
+#contact .formcontainer .formbox form .forminputs .forminput .inpt,
+#contact .formcontainer .formbox form .forminputs .forminput .inptbig {
   position: relative;
   border: solid 2px #f5d8b7;
   font-family: century-gothic;
@@ -366,21 +386,22 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   padding: 0.4rem 0.5rem 0.4rem 2rem;
   outline: none;
 }
-.contact .formcontainer .formbox form .forminputs .forminput .inpt::placeholder, .contact .formcontainer .formbox form .forminputs .forminput .inptbig::placeholder {
+#contact .formcontainer .formbox form .forminputs .forminput .inpt::placeholder,
+#contact .formcontainer .formbox form .forminputs .forminput .inptbig::placeholder {
   font-family: century-gothic;
   font-size: 0.8rem;
   color: #1a3a61;
 }
-.contact .formcontainer .formbox form .forminputs .forminput .inputassunto {
+#contact .formcontainer .formbox form .forminputs .forminput .inputassunto {
   padding: 0.4rem 0.5rem 0.4rem 0.5rem;
 }
-.contact .formcontainer .formbox form .forminputs .forminput .inptbig {
+#contact .formcontainer .formbox form .forminputs .forminput .inptbig {
   width: 95%;
 }
-.contact .formcontainer .formbox form .forminputs .forminput .inpt {
+#contact .formcontainer .formbox form .forminputs .forminput .inpt {
   width: 90%;
 }
-.contact .formcontainer .formbox form .forminputs .txtarea {
+#contact .formcontainer .formbox form .forminputs .txtarea {
   grid-area: txtarea;
   resize: none;
   outline: none;
@@ -392,7 +413,12 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   font-family: century-gothic;
   width: 95%;
 }
-.contact .formcontainer .formbox form .forminputs::after {
+#contact .formcontainer .formbox form .forminputs .txtarea::placeholder {
+  font-family: century-gothic;
+  font-size: 0.8rem;
+  color: #1a3a61;
+}
+#contact .formcontainer .formbox form .forminputs::after {
   z-index: -1;
   position: absolute;
   content: "";
@@ -402,10 +428,10 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   right: -6px;
   background-color: #f4d1a2;
 }
-.contact .formcontainer .formbox form .forminputs .inputsubmit {
+#contact .formcontainer .formbox form .forminputs .inputsubmit {
   grid-area: btn;
 }
-.contact .formcontainer .formbox form .forminputs .inputsubmit .btnsubmit {
+#contact .formcontainer .formbox form .forminputs .inputsubmit .btnsubmit {
   padding: 1rem 0;
   width: 90%;
   margin: 1rem 0 1.5rem 0;
@@ -415,11 +441,15 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   color: white;
   letter-spacing: 1px;
   border: none;
+  cursor: pointer;
+}
+#contact .formcontainer .formbox form .forminputs .inputsubmit .btnsubmit:hover {
+  background-color: #132944;
 }
 
 footer {
-  padding: 0 8rem;
-  background-color: #1a3a61;
+  padding: 2rem 10%;
+  background-image: url(assets/WebImages/footerbg.png);
   color: #fff;
 }
 footer .clients {
@@ -427,47 +457,68 @@ footer .clients {
   flex-direction: column;
   align-items: center;
 }
+footer .clients h4 {
+  text-align: center;
+  font-weight: 300;
+}
 footer .clients .clientsbox {
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
   margin-top: 2rem;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.7);
+  padding: 0 0 2rem 0;
 }
 footer .clients .clientsbox img {
   height: 3rem;
-  opacity: 0.8;
+  opacity: 0.9;
 }
-footer .clients .clientsline {
-  margin: 2rem 0;
-  background-color: #fff;
-  opacity: 0.8;
-  width: 100%;
-  height: 1px;
+footer .clients .clientsbox .airbnb {
+  height: 2rem;
 }
-footer .addresscontainer {
+footer .footinfos {
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  flex-direction: column;
+  padding: 0 2.5%;
 }
-footer .addresscontainer .address h4 {
-  font-size: 0.9rem;
-  font-weight: 300;
-}
-footer .addresscontainer .address p {
-  font-size: 0.9rem;
-  font-weight: 300;
-}
-footer .footnotes {
+footer .footinfos .addresscontainer {
   display: flex;
-  justify-content: space-around;
-  gap: 10rem;
-  padding: 2rem 0;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+footer .footinfos .addresscontainer .address h4 {
   font-size: 0.8rem;
   font-weight: 300;
 }
-footer .footnotes .rightlink {
+footer .footinfos .addresscontainer .address p {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+footer .footinfos .footnotes {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 0 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+footer .footinfos .footnotes .rightreserved a {
+  text-decoration: none;
+  color: #dac0a3;
+}
+footer .footinfos .footnotes .rightreserved a:hover {
+  color: #bca48b;
+}
+footer .footinfos .footnotes .terms {
+  display: flex;
+  gap: 1rem;
+}
+footer .footinfos .footnotes .terms a {
+  color: #dac0a3;
+}
+footer .footinfos .footnotes .terms a:hover {
+  color: #bca48b;
 }
 
 
