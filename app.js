@@ -3,6 +3,7 @@ const btnsubmit = document.querySelector('.btnsubmit');
 
 btnsubmit.addEventListener('click', (e) => {
     e.preventDefault();
+    console.log(btnsubmit)
 })
 
 const observer = new IntersectionObserver((entries) => {
@@ -13,7 +14,6 @@ const observer = new IntersectionObserver((entries) => {
         }
     })
 })
-
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
