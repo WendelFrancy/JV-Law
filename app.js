@@ -3,6 +3,7 @@ const btnsubmit = document.querySelector('.btnsubmit');
 
 btnsubmit.addEventListener('click', (e) => {
     e.preventDefault();
+    console.log(btnsubmit)
 })
 
 const observer = new IntersectionObserver((entries) => {

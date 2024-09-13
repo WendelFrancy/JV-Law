@@ -464,27 +464,6 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   background-color: #132944;
 }
 
-@media screen and (min-width: 1600px) {
-  #contact {
-    padding: 1.5rem 20% 4rem 20%;
-  }
-}
-.gotop {
-  position: fixed;
-  top: 85vh;
-  right: 30px;
-}
-.gotop .gotopbox {
-  display: grid;
-  place-items: center;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-}
-.gotop .gotopbox img {
-  height: 25px;
-}
-
 footer {
   padding: 2rem 10%;
   background-image: url(assets/WebImages/footerbg.png);
