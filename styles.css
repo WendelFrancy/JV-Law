@@ -80,22 +80,22 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   color: rgba(255, 255, 255, 0.7803921569);
 }
 
-#home {
+.home {
   display: flex;
   justify-content: center;
   padding-top: 4rem;
   height: 400px;
 }
-#home .hometextcontainer {
+.home .hometextcontainer {
   position: relative;
   text-align: center;
   color: #fff;
 }
-#home .hometextcontainer h1 {
+.home .hometextcontainer h1 {
   font-size: 3rem;
   font-weight: 400;
 }
-#home .hometextcontainer p {
+.home .hometextcontainer p {
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 400;
@@ -182,11 +182,6 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   width: 500px;
 }
 
-@media screen and (min-width: 1600px) {
-  #aboutus {
-    padding: 4rem 20%;
-  }
-}
 #specialists .specialistscontent {
   background-color: #f9f9f9;
 }
@@ -219,7 +214,7 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  width: 30vh;
+  width: 35vh;
   filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 }
 #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardswrap {
@@ -233,11 +228,6 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
 }
 #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer p {
   font-size: 0.8rem;
-}
-@media screen and (min-width: 1600px) {
-  #specialists .specialistscontent .specialistscontainer {
-    padding: 4rem 20%;
-  }
 }
 
 #certified {
@@ -281,11 +271,6 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   font-size: 14px;
 }
 
-@media screen and (min-width: 1600px) {
-  #certified {
-    padding: 4rem 20%;
-  }
-}
 #contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -464,6 +449,22 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   background-color: #132944;
 }
 
+.gotop {
+  position: fixed;
+  top: 85vh;
+  right: 30px;
+}
+.gotop .gotopbox {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
+.gotop .gotopbox img {
+  height: 25px;
+}
+
 footer {
   padding: 2rem 10%;
   background-image: url(assets/WebImages/footerbg.png);
@@ -541,11 +542,6 @@ footer .footinfos .footnotes .terms a:hover {
   color: #bca48b;
 }
 
-@media screen and (min-width: 1600px) {
-  footer {
-    padding: 4rem 20%;
-  }
-}
 
 
 /*# sourceMappingURL=styles.css.map */

@@ -109,7 +109,7 @@ header {
   }
 }
 
-#home {
+.home {
   display: flex;
   justify-content: center;
   padding-top: 4rem;
@@ -226,14 +226,8 @@ header {
       }
     }
   }
-}
 
-@media screen and (min-width : 1600px){
-  #aboutus{
-    padding: 4rem 20%;
-  }
 }
-
 
 #specialists {
 
@@ -274,7 +268,7 @@ header {
             display: flex;
             flex-direction: column;
             padding-top: 60px;
-            width: 30vh;
+            width: 35vh;
             filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 
             .cardswrap {
@@ -292,11 +286,6 @@ header {
             }
           }
         }
-      }
-    }
-    @media screen and (min-width : 1600px){
-      .specialistscontainer{
-        padding: 4rem 20%;
       }
     }
 
@@ -346,11 +335,6 @@ header {
         font-size: 14px;
       }
     }
-  }
-}
-@media screen and (min-width : 1600px){
-  #certified{
-    padding: 4rem 20%;
   }
 }
 
@@ -564,27 +548,6 @@ header {
     }
   }
 }
-@media screen and (min-width : 1600px){
-  #contact{
-    padding: 1.5rem 20% 4rem 20%;
-  }
-}
-
-.gotop{
-  position: fixed;
-  top: 85vh;
-  right: 30px;
-  .gotopbox{
-    display: grid;
-    place-items: center;
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    img{
-      height: 25px;
-    }
-  }
-}
 
 .gotop{
   position: fixed;
@@ -691,11 +654,6 @@ footer {
         }
       }
     }
-  }
-}
-@media screen and (min-width : 1600px){
-  footer{
-    padding: 4rem 20%;
   }
 }
 
