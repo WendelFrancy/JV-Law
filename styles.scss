@@ -24,16 +24,16 @@
 
 $font--normal: century-gothic;
 
+html{
+  scroll-behavior: smooth;
+}
+
 .hidden{
   opacity: 0;
   transform: translateY(100%);
-  transition: all 1.2s;
+  transition: all 1s;
 }
-@media (prefers-reduced-motion) {
-  .hidden{
-    transition: none;
-  }
-}
+
 .show{
   opacity: 1;
   transform: translateY(0);
@@ -91,13 +91,16 @@ header {
         .menulist {
           display: flex;
           list-style: none;
-          gap: 6rem;
+          gap: 4rem;
 
           li {
             a {
               font-size: 1rem;
               color: #ffffff;
               text-decoration: none;
+              &:hover{
+                color: #ffffffc7;
+              }
             }
           }
         }
@@ -106,7 +109,7 @@ header {
   }
 }
 
-.home {
+#home {
   display: flex;
   justify-content: center;
   padding-top: 4rem;
@@ -223,8 +226,14 @@ header {
       }
     }
   }
-
 }
+
+@media screen and (min-width : 1600px){
+  #aboutus{
+    padding: 4rem 20%;
+  }
+}
+
 
 #specialists {
 
@@ -265,7 +274,7 @@ header {
             display: flex;
             flex-direction: column;
             padding-top: 60px;
-            width: 35vh;
+            width: 30vh;
             filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 
             .cardswrap {
@@ -285,11 +294,16 @@ header {
         }
       }
     }
+    @media screen and (min-width : 1600px){
+      .specialistscontainer{
+        padding: 4rem 20%;
+      }
+    }
 
   }
 }
 
-.certified {
+#certified {
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -332,6 +346,11 @@ header {
         font-size: 14px;
       }
     }
+  }
+}
+@media screen and (min-width : 1600px){
+  #certified{
+    padding: 4rem 20%;
   }
 }
 
@@ -545,6 +564,27 @@ header {
     }
   }
 }
+@media screen and (min-width : 1600px){
+  #contact{
+    padding: 1.5rem 20% 4rem 20%;
+  }
+}
+
+.gotop{
+  position: fixed;
+  top: 85vh;
+  right: 30px;
+  .gotopbox{
+    display: grid;
+    place-items: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    img{
+      height: 25px;
+    }
+  }
+}
 
 footer {
   padding: 2rem 10%;
@@ -577,6 +617,10 @@ footer {
 
       .airbnb {
         height: 2rem;
+      }
+
+      .adidas{
+        height: 4rem;
       }
     }
   }
@@ -631,6 +675,11 @@ footer {
         }
       }
     }
+  }
+}
+@media screen and (min-width : 1600px){
+  footer{
+    padding: 4rem 20%;
   }
 }
 

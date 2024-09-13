@@ -7,17 +7,16 @@
   font-weight: 400;
   font-stretch: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .hidden {
   opacity: 0;
   transform: translateY(100%);
-  transition: all 1.2s;
+  transition: all 1s;
 }
 
-@media (prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
-}
 .show {
   opacity: 1;
   transform: translateY(0);
@@ -70,30 +69,33 @@ header .menucontainer .menu .logobox p {
 header .menucontainer .menu .menutxtbox .menulist {
   display: flex;
   list-style: none;
-  gap: 6rem;
+  gap: 4rem;
 }
 header .menucontainer .menu .menutxtbox .menulist li a {
   font-size: 1rem;
   color: #ffffff;
   text-decoration: none;
 }
+header .menucontainer .menu .menutxtbox .menulist li a:hover {
+  color: rgba(255, 255, 255, 0.7803921569);
+}
 
-.home {
+#home {
   display: flex;
   justify-content: center;
   padding-top: 4rem;
   height: 400px;
 }
-.home .hometextcontainer {
+#home .hometextcontainer {
   position: relative;
   text-align: center;
   color: #fff;
 }
-.home .hometextcontainer h1 {
+#home .hometextcontainer h1 {
   font-size: 3rem;
   font-weight: 400;
 }
-.home .hometextcontainer p {
+#home .hometextcontainer p {
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 400;
@@ -180,6 +182,11 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   width: 500px;
 }
 
+@media screen and (min-width: 1600px) {
+  #aboutus {
+    padding: 4rem 20%;
+  }
+}
 #specialists .specialistscontent {
   background-color: #f9f9f9;
 }
@@ -212,7 +219,7 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  width: 35vh;
+  width: 30vh;
   filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 }
 #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardswrap {
@@ -227,48 +234,58 @@ header .menucontainer .menu .menutxtbox .menulist li a {
 #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer p {
   font-size: 0.8rem;
 }
+@media screen and (min-width: 1600px) {
+  #specialists .specialistscontent .specialistscontainer {
+    padding: 4rem 20%;
+  }
+}
 
-.certified {
+#certified {
   display: flex;
   align-items: center;
   gap: 3rem;
   margin-top: 0.3rem;
   padding: 4rem 10%;
 }
-.certified .certifiedtexts {
+#certified .certifiedtexts {
   display: flex;
   flex-direction: column;
 }
-.certified .certifiedtexts h2 {
+#certified .certifiedtexts h2 {
   font-weight: 400;
 }
-.certified .certifiedtexts .line {
+#certified .certifiedtexts .line {
   margin: 5px 0 0 0;
   width: 65px;
   height: 2px;
   background-color: #dac0a3;
 }
-.certified .certifiedtexts p {
+#certified .certifiedtexts p {
   margin: 2rem 0;
   line-height: 1.3;
   font-weight: 300;
 }
-.certified .certifiedcontainer {
+#certified .certifiedcontainer {
   display: flex;
   gap: 3rem;
 }
-.certified .certifiedcontainer .certifications {
+#certified .certifiedcontainer .certifications {
   text-align: center;
 }
-.certified .certifiedcontainer .certifications img {
+#certified .certifiedcontainer .certifications img {
   height: 20vh;
 }
-.certified .certifiedcontainer .certifications p {
+#certified .certifiedcontainer .certifications p {
   width: 150px;
   margin-top: 1rem;
   font-size: 14px;
 }
 
+@media screen and (min-width: 1600px) {
+  #certified {
+    padding: 4rem 20%;
+  }
+}
 #contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -447,6 +464,27 @@ header .menucontainer .menu .menutxtbox .menulist li a {
   background-color: #132944;
 }
 
+@media screen and (min-width: 1600px) {
+  #contact {
+    padding: 1.5rem 20% 4rem 20%;
+  }
+}
+.gotop {
+  position: fixed;
+  top: 85vh;
+  right: 30px;
+}
+.gotop .gotopbox {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
+.gotop .gotopbox img {
+  height: 25px;
+}
+
 footer {
   padding: 2rem 10%;
   background-image: url(assets/WebImages/footerbg.png);
@@ -476,6 +514,9 @@ footer .clients .clientsbox img {
 }
 footer .clients .clientsbox .airbnb {
   height: 2rem;
+}
+footer .clients .clientsbox .adidas {
+  height: 4rem;
 }
 footer .footinfos {
   display: flex;
@@ -521,6 +562,11 @@ footer .footinfos .footnotes .terms a:hover {
   color: #bca48b;
 }
 
+@media screen and (min-width: 1600px) {
+  footer {
+    padding: 4rem 20%;
+  }
+}
 
 
 /*# sourceMappingURL=styles.css.map */
