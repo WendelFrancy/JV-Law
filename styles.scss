@@ -569,6 +569,7 @@ header {
 footer {
   padding: 2rem 10%;
   background-image: url(assets/WebImages/footerbg.png);
+  background-repeat: no-repeat;
   color: #fff;
 
   @media screen and (min-width: 1600px) {
@@ -580,6 +581,7 @@ footer {
     align-items: center;
 
     h4 {
+      font-size: 1.5rem;
       text-align: center;
       font-weight: 300;
     }
