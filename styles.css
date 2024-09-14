@@ -40,7 +40,7 @@ header {
 header .bgmenuimg {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 header .menucontainer {
   width: 100%;
@@ -360,8 +360,8 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
 }
 #contact .formcontainer .formbox .formlogo {
   position: relative;
-  margin: 30% 0 0 28%;
-  height: 35px;
+  margin: 30% 0 0 25%;
+  height: 40px;
 }
 #contact .formcontainer .formbox form {
   color: #1a3a61;
@@ -408,6 +408,7 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
 #contact .formcontainer .formbox form .forminputs .forminput .inptbig {
   position: relative;
   border: solid 2px #f5d8b7;
+  height: 40px;
   font-family: century-gothic;
   font-size: 0.8rem;
   color: #1a3a61;
@@ -476,22 +477,6 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   background-color: #132944;
 }
 
-.gotop {
-  position: fixed;
-  top: 85vh;
-  right: 30px;
-}
-.gotop .gotopbox {
-  display: grid;
-  place-items: center;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-}
-.gotop .gotopbox img {
-  height: 25px;
-}
-
 footer {
   padding: 2rem 10%;
   background-image: url(assets/WebImages/footerbg.png);
@@ -521,14 +506,14 @@ footer .clients .clientsbox {
   padding: 0 0 2rem 0;
 }
 footer .clients .clientsbox img {
-  height: 3rem;
+  height: 4rem;
   opacity: 0.9;
 }
 footer .clients .clientsbox .airbnb {
-  height: 2rem;
+  height: 3rem;
 }
 footer .clients .clientsbox .adidas {
-  height: 4rem;
+  height: 5rem;
 }
 footer .footinfos {
   display: flex;
@@ -541,11 +526,11 @@ footer .footinfos .addresscontainer {
   margin-top: 2rem;
 }
 footer .footinfos .addresscontainer .address h4 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 footer .footinfos .addresscontainer .address p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 footer .footinfos .footnotes {
@@ -553,7 +538,7 @@ footer .footinfos .footnotes {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0 0 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 footer .footinfos .footnotes .rightreserved a {
