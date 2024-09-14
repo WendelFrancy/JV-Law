@@ -156,6 +156,11 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   display: flex;
   padding: 4rem 10%;
 }
+@media screen and (min-width: 1600px) {
+  #aboutus {
+    padding: 4rem 20%;
+  }
+}
 #aboutus .aboutuscontainer {
   display: flex;
   align-items: center;
@@ -188,6 +193,11 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
 #specialists .specialistscontent .specialistscontainer {
   padding: 3rem 10%;
 }
+@media screen and (min-width: 1600px) {
+  #specialists .specialistscontent .specialistscontainer {
+    padding: 3rem 20%;
+  }
+}
 #specialists .specialistscontent .specialistscontainer .textcontainer {
   display: flex;
   align-items: center;
@@ -214,7 +224,7 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  width: 35vh;
+  width: 30vh;
   filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 }
 #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardswrap {
@@ -236,6 +246,11 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   gap: 3rem;
   margin-top: 0.3rem;
   padding: 4rem 10%;
+}
+@media screen and (min-width: 1600px) {
+  #certified {
+    padding: 4rem 20%;
+  }
 }
 #certified .certifiedtexts {
   display: flex;
@@ -263,7 +278,7 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   text-align: center;
 }
 #certified .certifiedcontainer .certifications img {
-  height: 20vh;
+  height: 15vh;
 }
 #certified .certifiedcontainer .certifications p {
   width: 150px;
@@ -278,8 +293,13 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   padding: 1.5rem 10% 4rem 10%;
   align-items: center;
 }
+@media screen and (min-width: 1600px) {
+  #contact {
+    padding: 1.5rem 20% 4rem 20%;
+  }
+}
 #contact .contacttxt {
-  padding: 0 2rem 0 0;
+  padding: 0 4rem 0 0;
 }
 #contact .contacttxt h2 {
   font-weight: 400;
@@ -314,6 +334,13 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
 }
 #contact .contacttxt .contactsocialscontainer .contactsocials .socialbox .socialphone {
   height: 25px;
+}
+#contact .contacttxt .contactsocialscontainer .contactsocials .socialinst {
+  color: black;
+  text-decoration: none;
+}
+#contact .contacttxt .contactsocialscontainer .contactsocials .socialinst:hover {
+  color: rgba(0, 0, 0, 0.699);
 }
 #contact .formcontainer {
   z-index: 1;
@@ -470,6 +497,11 @@ footer {
   background-image: url(assets/WebImages/footerbg.png);
   color: #fff;
 }
+@media screen and (min-width: 1600px) {
+  footer {
+    padding: 2rem 20%;
+  }
+}
 footer .clients {
   display: flex;
   flex-direction: column;
@@ -539,6 +571,7 @@ footer .footinfos .footnotes .terms a {
   color: #dac0a3;
 }
 footer .footinfos .footnotes .terms a:hover {
+  cursor: pointer;
   color: #bca48b;
 }
 

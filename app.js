@@ -3,7 +3,11 @@ const btnsubmit = document.querySelector('.btnsubmit');
 
 btnsubmit.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log(btnsubmit)
+    document.querySelector('.inputname').value = "";
+    document.querySelector('.inputphone').value = "";
+    document.querySelector('.inputemail').value = "";
+    document.querySelector('.inputassunto').value = "";
+    document.querySelector('.txtarea').value = "";
 })
 
 const observer = new IntersectionObserver((entries) => {

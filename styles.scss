@@ -196,7 +196,9 @@ header {
 #aboutus {
   display: flex;
   padding: 4rem 10%;
-
+  @media screen and (min-width: 1600px) {
+    padding: 4rem 20%;
+  }
   .aboutuscontainer {
     display: flex;
     align-items: center;
@@ -236,7 +238,9 @@ header {
 
     .specialistscontainer {
       padding: 3rem 10%;
-
+      @media screen and (min-width: 1600px) {
+        padding: 3rem 20%;
+      }
       .textcontainer {
         display: flex;
         align-items: center;
@@ -268,7 +272,7 @@ header {
             display: flex;
             flex-direction: column;
             padding-top: 60px;
-            width: 35vh;
+            width: 30vh;
             filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 
             .cardswrap {
@@ -298,6 +302,9 @@ header {
   gap: 3rem;
   margin-top: 0.3rem;
   padding: 4rem 10%;
+  @media screen and (min-width: 1600px) {
+    padding: 4rem 20%;
+  }
 
   .certifiedtexts {
     display: flex;
@@ -326,7 +333,7 @@ header {
       text-align: center;
 
       img {
-        height: 20vh;
+        height: 15vh;
       }
 
       p {
@@ -344,9 +351,11 @@ header {
   background-color: #f9f9f9;
   padding: 1.5rem 10% 4rem 10%;
   align-items: center;
-
+  @media screen and (min-width: 1600px) {
+    padding: 1.5rem 20% 4rem 20%;
+  }
   .contacttxt {
-    padding: 0 2rem 0 0;
+    padding: 0 4rem 0 0;
 
     h2 {
       font-weight: 400;
@@ -378,9 +387,16 @@ header {
           height: 3rem;
           width: 4rem;
           border: solid 1px #f5d8b7;
-
           .socialphone {
             height: 25px;
+          }
+
+        }
+        .socialinst{
+          color: black;
+          text-decoration: none;
+          &:hover{
+            color: rgba(0, 0, 0, 0.699);
           }
         }
       }
@@ -570,6 +586,9 @@ footer {
   background-image: url(assets/WebImages/footerbg.png);
   color: #fff;
 
+  @media screen and (min-width: 1600px) {
+    padding: 2rem 20%;
+  }
   .clients {
     display: flex;
     flex-direction: column;
@@ -649,6 +668,7 @@ footer {
         a{
           color: #dac0a3;
           &:hover{
+            cursor: pointer;
             color: #bca48b;
           }
         }
