@@ -570,7 +570,7 @@ footer {
   padding: 2rem 10%;
   background-image: url(assets/WebImages/footerbg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   color: #fff;
 
   @media screen and (min-width: 1600px) {
@@ -583,6 +583,7 @@ footer {
 
     h4 {
       font-size: 1.5rem;
+      color: black;
       text-align: center;
       font-weight: 300;
     }
