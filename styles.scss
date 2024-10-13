@@ -57,7 +57,7 @@ header {
   .bgmenuimg {
     position: absolute;
     width: 100%;
-    height: 885%;
+    height: 79%;
   }
 
   .menucontainer {
@@ -226,8 +226,10 @@ header {
     }
 
     .aboutusimg {
+      display: flex;
+      justify-content: center;
       img {
-        width: 500px;
+        width: 90%;
       }
     }
   }
@@ -277,7 +279,7 @@ header {
             display: flex;
             flex-direction: column;
             padding-top: 60px;
-            width: 30vh;
+            width: 16rem;
             filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 
             .cardswrap {
@@ -289,10 +291,6 @@ header {
               text-align: center;
               background-color: #1a3a61;
               color: #f9f9f9;
-
-              p {
-                font-size: 0.8rem;
-              }
             }
           }
         }
@@ -375,7 +373,10 @@ header {
     }
 
     .contactpara {
-      margin: 2rem 0 2rem 0;
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0;
+      gap: 1rem;
       font-weight: 400;
     }
 
@@ -650,7 +651,7 @@ footer {
       align-items: center;
       justify-content: space-between;
       padding: 2rem 0 0 0;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       font-weight: 300;
 
       .rightreserved {

@@ -1,0 +1,242 @@
+@media screen and (max-width: 500px) {
+    header {
+        .menucontainer {
+            display: flex;
+            justify-content: center;
+
+            .menu {
+                .menutxtbox {
+                    .menulist {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .home {
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        height: 300px;
+    
+        .hometextcontainer {
+            h1 {
+                font-size: 1.5rem;
+            }
+    
+            p {
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+    
+    .homecards {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    
+        .homecardcontainer {
+            background-color: #fff;
+            color: #010209;
+            padding: 1.5rem 2rem;
+            max-width: 300px;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    
+            .cardheader {
+                display: flex;
+                gap: 1rem;
+    
+                img {
+                    height: 60px;
+                }
+    
+                .cardheadertxt {
+                    h3 {
+                        margin: 0.1rem 0;
+                        font-weight: 400;
+                    }
+    
+                    p {
+                        font-size: 0.8rem;
+                        line-height: 1.3;
+                    }
+                }
+            }
+    
+            .cardpara {
+                padding: 0 2rem 0 0;
+                margin-top: 1rem;
+                line-height: 1.3;
+            }
+    
+            .cardfooter {
+                display: flex;
+                align-items: center;
+                margin-top: 1.5rem;
+    
+                a {
+                    text-decoration: none;
+                    color: #010209;
+                }
+            }
+        }
+    }
+    
+    #aboutus {
+        display: flex;
+        padding: 1rem 5%;
+        .aboutuscontainer {
+          flex-direction: column;
+          .aboutustexts {
+            max-width: 45%;
+      
+            h2 {
+              font-weight: 400;
+            }
+      
+            p {
+              margin: 2rem 0;
+              line-height: 1.3;
+              font-weight: 300;
+            }
+          }
+      
+          .aboutusimg {
+            display: flex;
+            justify-content: center;
+            img {
+              width: 90%;
+            }
+          }
+        }
+      
+      }
+    
+    #specialists {
+        .specialistscontent {
+          .specialistscontainer {
+            padding: 1rem 5%;
+            .cardcontainer {
+              .specialistscards {
+                flex-wrap: wrap;
+              }
+            }
+          }
+      
+        }
+      }
+    
+    #certified {
+        flex-direction: column;
+        padding: 1rem 5%;
+        .certifiedtexts{
+            h2{
+                text-align: center;
+                font-size: 1.3rem;
+            }
+            .line{
+                align-self: center;
+                width: 80px;
+            }
+        }
+        .certifiedcontainer {
+            justify-content: center;
+            flex-wrap: wrap;
+    
+            .certifications {
+                text-align: center;
+    
+                img {
+                    height: 10vh;
+                }
+    
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    
+    #contact {
+        padding: 1.5rem 5% 2rem 5%;
+        grid-template-columns: none;
+        .contacttxt{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            h2{
+                text-align: center;
+                font-size: 1.3rem;
+            }
+            .line{
+                align-self: center;
+                width: 80px;
+            }
+            .contactpara{
+                font-size: 0.9rem;
+            }
+            .contactpara p:nth-child(2n){
+                display: none;
+            }
+            .contactsocialscontainer{
+                font-size: 0.9rem;
+            }
+        }
+        .formcontainer {
+            display: none;
+        }
+    }
+    
+    footer {
+        padding: 1rem 5% 2rem 5%;
+        background-position: center;
+        .clients {
+          .clientsbox {
+            img {
+              height: 2rem;
+            }
+      
+            .airbnb {
+              display: none;
+            }
+      
+            .adidas {
+              display: none;
+            }
+          }
+        }
+      
+        .footinfos {
+          .addresscontainer {
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 0.8rem;
+            .address {
+              width: 8.3rem;
+              h4 {
+                font-size: 0.7rem;
+              }
+              p {
+                font-size: 0.7rem;
+              }
+            }
+          }
+      
+          .footnotes {
+            flex-direction: column-reverse;
+            gap: 1rem;
+            font-size: 0.7rem;
+            .rightreserved {
+                p:nth-child(1){
+                    display: none;
+                }
+            }
+          }
+        }
+    }
+}
