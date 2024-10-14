@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     padding-top: 2rem;
-    height: 300px;
+    height: 20rem;
   }
   .home .hometextcontainer h1 {
     font-size: 1.5rem;
@@ -20,47 +20,7 @@
     margin-top: 1rem;
   }
   .homecards {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  .homecards .homecardcontainer {
-    background-color: #fff;
-    color: #010209;
-    padding: 1.5rem 2rem;
-    max-width: 300px;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
-  }
-  .homecards .homecardcontainer .cardheader {
-    display: flex;
-    gap: 1rem;
-  }
-  .homecards .homecardcontainer .cardheader img {
-    height: 60px;
-  }
-  .homecards .homecardcontainer .cardheader .cardheadertxt h3 {
-    margin: 0.1rem 0;
-    font-weight: 400;
-  }
-  .homecards .homecardcontainer .cardheader .cardheadertxt p {
-    font-size: 0.8rem;
-    line-height: 1.3;
-  }
-  .homecards .homecardcontainer .cardpara {
-    padding: 0 2rem 0 0;
-    margin-top: 1rem;
-    line-height: 1.3;
-  }
-  .homecards .homecardcontainer .cardfooter {
-    display: flex;
-    align-items: center;
-    margin-top: 1.5rem;
-  }
-  .homecards .homecardcontainer .cardfooter a {
-    text-decoration: none;
-    color: #010209;
+    display: none;
   }
   #aboutus {
     display: flex;
@@ -70,32 +30,67 @@
     flex-direction: column;
   }
   #aboutus .aboutuscontainer .aboutustexts {
-    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
   }
   #aboutus .aboutuscontainer .aboutustexts h2 {
-    font-weight: 400;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #aboutus .aboutuscontainer .aboutustexts .line {
+    align-self: center;
+    width: 80px;
   }
   #aboutus .aboutuscontainer .aboutustexts p {
-    margin: 2rem 0;
-    line-height: 1.3;
-    font-weight: 300;
+    margin: 1rem 0 0 0;
+    font-size: 0.9rem;
   }
   #aboutus .aboutuscontainer .aboutusimg {
-    display: flex;
-    justify-content: center;
-  }
-  #aboutus .aboutuscontainer .aboutusimg img {
-    width: 90%;
+    display: none;
   }
   #specialists .specialistscontent .specialistscontainer {
     padding: 1rem 5%;
   }
-  #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards {
+  #specialists .specialistscontent .specialistscontainer .textcontainer {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer {
+    flex-direction: column;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer h2 {
+    font-size: 1.3rem;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer .line {
+    width: 80px;
+    height: 2px;
+    margin: 5px 0 0 0;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer p {
+    padding: 1rem 0 1.5rem 0;
+    font-size: 0.9rem;
+  }
+  #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards {
+    gap: 2rem;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    scroll-padding-left: 10px;
+  }
+  #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
+    padding: 0 0 0.6rem 0;
+    width: 13rem;
+    scroll-snap-align: start;
+  }
+  #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
+    font-size: 0.8rem;
   }
   #certified {
     flex-direction: column;
-    padding: 1rem 5%;
+    padding: 1.5rem 5%;
+    margin-top: 0;
+    gap: 0;
   }
   #certified .certifiedtexts h2 {
     text-align: center;
@@ -104,6 +99,10 @@
   #certified .certifiedtexts .line {
     align-self: center;
     width: 80px;
+  }
+  #certified .certifiedtexts p {
+    margin: 1rem 0 1.5rem 0;
+    font-size: 0.9rem;
   }
   #certified .certifiedcontainer {
     justify-content: center;
@@ -116,7 +115,7 @@
     height: 10vh;
   }
   #certified .certifiedcontainer .certifications p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   #contact {
     padding: 1.5rem 5% 2rem 5%;
