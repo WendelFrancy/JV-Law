@@ -40,7 +40,7 @@ header {
 header .bgmenuimg {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 79%;
 }
 header .menucontainer {
   width: 100%;
@@ -183,8 +183,12 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   line-height: 1.3;
   font-weight: 300;
 }
+#aboutus .aboutuscontainer .aboutusimg {
+  display: flex;
+  justify-content: center;
+}
 #aboutus .aboutuscontainer .aboutusimg img {
-  width: 500px;
+  width: 90%;
 }
 
 #specialists .specialistscontent {
@@ -224,7 +228,7 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  width: 30vh;
+  width: 16rem;
   filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 }
 #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardswrap {
@@ -235,9 +239,6 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   text-align: center;
   background-color: #1a3a61;
   color: #f9f9f9;
-}
-#specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer p {
-  font-size: 0.8rem;
 }
 
 #certified {
@@ -311,7 +312,10 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   background-color: #dac0a3;
 }
 #contact .contacttxt .contactpara {
-  margin: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  gap: 1rem;
   font-weight: 400;
 }
 #contact .contacttxt .contactsocialscontainer {
@@ -536,7 +540,7 @@ footer .footinfos .footnotes {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0 0 0;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 footer .footinfos .footnotes .rightreserved a {
