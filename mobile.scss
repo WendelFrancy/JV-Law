@@ -103,13 +103,18 @@
           }
         }
         .cardcontainer {
+          @keyframes scrollInfinito {
+            to {
+              translate: calc(-50% - 5px);
+            }
+          }
           .specialistscards {
             gap: 2rem;
             overflow-x: scroll;
-            padding-left: 15rem;
             scroll-snap-type: both;
             scroll-snap-align: center;
-            
+            scroll-behavior: smooth;
+
             .cards {
               padding: 0 0 0.6rem 0;
               width: 13rem;
