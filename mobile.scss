@@ -106,13 +106,14 @@
           .specialistscards {
             gap: 2rem;
             overflow-x: scroll;
-            scroll-snap-type: x proximity;
-            scroll-padding-left: 10px;
+            padding-left: 15rem;
+            scroll-snap-type: both;
+            scroll-snap-align: center;
             
             .cards {
               padding: 0 0 0.6rem 0;
               width: 13rem;
-              scroll-snap-align: start;
+              scroll-snap-align: center;
 
               .cardinfocontainer {
                 font-size: 0.8rem;
