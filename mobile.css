@@ -80,14 +80,11 @@
   #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards {
     gap: 2rem;
     overflow-x: scroll;
-    scroll-snap-type: both;
-    scroll-snap-align: center;
-    scroll-behavior: smooth;
   }
   #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
     padding: 0 0 0.6rem 0;
     width: 13rem;
-    scroll-snap-align: center;
+    transform: translateX(8rem);
   }
   #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
     font-size: 0.8rem;
