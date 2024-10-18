@@ -1,5 +1,7 @@
 
 const btnsubmit = document.querySelector('.btnsubmit');
+const cardsContainer = document.querySelector('.specialistscards');
+const cards = document.querySelector('.cards');
 
 btnsubmit.addEventListener('click', (e) => {
     e.preventDefault();
@@ -25,64 +27,26 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 }
 
+cards.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const totalCards = cards.length;
+
+    currentI += direction;
+
+    if (currentI < 0) {
+        currentI = totalCards - 1;
+    } else if (currentI >= totalCards) {
+        currentI = 0;
+    }
+
+    const offset = -currentI * 100;
+    cards.forEach(card => {
+        card.style.transform = `translateX(${offset})`;
+    })
+})
+
 textslide();
 
-const cardsContainer = document.querySelector('.specialistscards');
-let isDown = false;
-let startX;
-let scrollLeft;
 
-cardsContainer.addEventListener('mousedown', (e) => {
-    isDown = true;
-    startX = e.pageX - cardsContainer.offsetLeft;
-    scrollLeft = cardsContainer.scrollLeft;
-});
 
-cardsContainer.addEventListener('mouseleave', () => {
-    isDown = false;
-});
-
-cardsContainer.addEventListener('mouseup', () => {
-    isDown = false;
-});
-
-cardsContainer.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - cardsContainer.offsetLeft;
-    const walk = (x - startX) * 2; // Ajuste a sensibilidade aqui
-    cardsContainer.scrollLeft = scrollLeft - walk;
-
-    // Lógica para reposicionar os cartões
-    if (cardsContainer.scrollLeft < 208) {
-        cardsContainer.scrollLeft += 600; // Ajuste conforme necessário
-    } else if (cardsContainer.scrollLeft > 832) { // Ajuste para o limite máximo
-        cardsContainer.scrollLeft -= 600;
-    }
-});
-
-// Para toque em telas sensíveis
-cardsContainer.addEventListener('touchstart', (e) => {
-    isDown = true;
-    startX = e.touches[0].pageX - cardsContainer.offsetLeft;
-    scrollLeft = cardsContainer.scrollLeft;
-});
-
-cardsContainer.addEventListener('touchend', () => {
-    isDown = false;
-});
-
-cardsContainer.addEventListener('touchmove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.touches[0].pageX - cardsContainer.offsetLeft;
-    const walk = (x - startX) * 2; // Ajuste a sensibilidade aqui
-    cardsContainer.scrollLeft = scrollLeft - walk;
-    
-    // Lógica para reposicionar os cartões
-    if (cardsContainer.scrollLeft < 200) {
-        cardsContainer.scrollLeft += 400; // Ajuste conforme necessário
-    } else if (cardsContainer.scrollLeft > 800) { // Ajuste para o limite máximo
-        cardsContainer.scrollLeft -= 600;
-    }
-});
