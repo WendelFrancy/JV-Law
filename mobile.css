@@ -1,3 +1,179 @@
+@media screen and (max-width: 900px) {
+  header .bgmenuimg {
+    height: 25rem;
+  }
+  header .menucontainer {
+    display: flex;
+    justify-content: center;
+  }
+  header .menucontainer .menu .menutxtbox .menulist {
+    display: none;
+  }
+  .home {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    height: 20rem;
+  }
+  .home .hometextcontainer h1 {
+    font-size: 1.5rem;
+  }
+  .home .hometextcontainer p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .homecards {
+    display: none;
+  }
+  #aboutus {
+    display: flex;
+    padding: 1rem 5%;
+  }
+  #aboutus .aboutuscontainer {
+    flex-direction: column;
+  }
+  #aboutus .aboutuscontainer .aboutustexts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+  }
+  #aboutus .aboutuscontainer .aboutustexts h2 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #aboutus .aboutuscontainer .aboutustexts .line {
+    align-self: center;
+    width: 80px;
+  }
+  #aboutus .aboutuscontainer .aboutustexts p {
+    margin: 1rem 0 0 0;
+    font-size: 0.9rem;
+  }
+  #aboutus .aboutuscontainer .aboutusimg {
+    display: none;
+  }
+  #specialists .specialistscontent .specialistscontainer {
+    padding: 1rem 5%;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer {
+    flex-direction: column;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer h2 {
+    font-size: 1.3rem;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer .line {
+    width: 80px;
+    height: 2px;
+    margin: 5px 0 0 0;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer p {
+    padding: 1rem 0 1.5rem 0;
+    font-size: 0.9rem;
+  }
+  #specialists .specialistscontent .specialistscontainer .cardcontainer .cardinfocontainer {
+    font-size: 0.8rem;
+  }
+  #certified {
+    flex-direction: column;
+    padding: 1.5rem 5%;
+    margin-top: 0;
+    gap: 0;
+  }
+  #certified .certifiedtexts h2 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #certified .certifiedtexts .line {
+    align-self: center;
+    width: 80px;
+  }
+  #certified .certifiedtexts p {
+    margin: 1rem 0 1.5rem 0;
+    font-size: 0.9rem;
+  }
+  #certified .certifiedcontainer {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #certified .certifiedcontainer .certifications {
+    text-align: center;
+  }
+  #certified .certifiedcontainer .certifications img {
+    height: 10vh;
+  }
+  #certified .certifiedcontainer .certifications p {
+    font-size: 0.7rem;
+  }
+  #contact {
+    padding: 1.5rem 5% 2rem 5%;
+    grid-template-columns: none;
+  }
+  #contact .contacttxt {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  #contact .contacttxt h2 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #contact .contacttxt .line {
+    align-self: center;
+    width: 80px;
+  }
+  #contact .contacttxt .contactpara {
+    font-size: 0.9rem;
+  }
+  #contact .contacttxt .contactpara p:nth-child(2n) {
+    display: none;
+  }
+  #contact .contacttxt .contactsocialscontainer {
+    font-size: 0.9rem;
+  }
+  #contact .formcontainer {
+    display: none;
+  }
+  footer {
+    padding: 1rem 5% 2rem 5%;
+    background-position: center;
+  }
+  footer .clients .clientsbox img {
+    height: 2rem;
+  }
+  footer .clients .clientsbox .airbnb {
+    display: none;
+  }
+  footer .clients .clientsbox .adidas {
+    display: none;
+  }
+  footer .footinfos .addresscontainer {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 0.8rem;
+  }
+  footer .footinfos .addresscontainer .address {
+    width: 8.3rem;
+  }
+  footer .footinfos .addresscontainer .address h4 {
+    font-size: 0.7rem;
+  }
+  footer .footinfos .addresscontainer .address p {
+    font-size: 0.7rem;
+  }
+  footer .footinfos .footnotes {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    font-size: 0.7rem;
+  }
+  footer .footinfos .footnotes .rightreserved p:nth-child(1) {
+    display: none;
+  }
+}
 @media screen and (max-width: 500px) {
   header .bgmenuimg {
     height: 25rem;

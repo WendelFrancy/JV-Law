@@ -229,7 +229,7 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  width: 16rem;
+  width: 25%;
   filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 }
 #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardswrap {
