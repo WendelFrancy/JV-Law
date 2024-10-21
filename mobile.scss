@@ -4,6 +4,11 @@
 
 @media screen and (max-width: 500px) { // Done 100%
   header {
+
+    .bgmenuimg {
+      height: 25rem;
+    }
+  
     .menucontainer {
       display: flex;
       justify-content: center;

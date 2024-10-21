@@ -43,7 +43,8 @@ header .bgmenuimg {
   height: 37.5rem;
 }
 header .menucontainer {
-  width: 100%;
+  width: 95%;
+  padding: 0 5%;
 }
 header .menucontainer .menu {
   position: relative;
