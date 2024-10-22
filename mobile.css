@@ -190,10 +190,18 @@
   #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
     padding: 0 0 0.6rem 0;
     width: 13rem;
-    transform: translateX(2rem);
+    transform: translateX(rem);
   }
   #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .menucontainer .menu .logobox .logoimg {
+    width: 3rem;
+  }
+  header .menucontainer .menu .logobox p {
+    font-size: 0.7rem;
   }
 }
 
