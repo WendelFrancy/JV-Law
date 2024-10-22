@@ -229,7 +229,7 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  width: 25%;
+  width: 22%;
   filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
 }
 #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardswrap {
@@ -237,6 +237,7 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
 }
 #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
   padding: 1rem 0;
+  font-size: 0.8em;
   text-align: center;
   background-color: #1a3a61;
   color: #f9f9f9;

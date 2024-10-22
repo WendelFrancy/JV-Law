@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) { // Done 100%
 
   // To do
   header {
@@ -107,10 +107,15 @@
           }
         }
         .cardcontainer{
-          .cardinfocontainer {
-            font-size: 0.8rem;
+          .specialistscards{
+            .cards{
+              width: 25%;
+              .cardinfocontainer {
+                font-size: 0.7em;
+              }
+            }
           }
-        }
+          }
       }
 
     }
@@ -248,269 +253,28 @@
   }
 }
 
-
-@media screen and (max-width: 500px) {
-
-  // Done 100%
-  header {
-
-    .bgmenuimg {
-      height: 25rem;
-    }
-
-    .menucontainer {
-      display: flex;
-      justify-content: center;
-
-      .menu {
-        .menutxtbox {
-          .menulist {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-
-  .home {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    height: 20rem;
-
-    .hometextcontainer {
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 1rem;
-        margin-top: 1rem;
-      }
-    }
-  }
-
-  .homecards {
-    display: none;
-  }
-
-  #aboutus {
-    display: flex;
-    padding: 1rem 5%;
-
-    .aboutuscontainer {
-      flex-direction: column;
-
-      .aboutustexts {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 100%;
-
-        h2 {
-          text-align: center;
-          font-size: 1.3rem;
-        }
-
-        .line {
-          align-self: center;
-          width: 80px;
-        }
-
-        p {
-          margin: 1rem 0 0 0;
-          font-size: 0.9rem;
-        }
-      }
-
-      .aboutusimg {
-        display: none;
-      }
-    }
-  }
+@media screen and (max-width: 768px) {
 
   #specialists {
     .specialistscontent {
       .specialistscontainer {
-        padding: 1rem 5%;
-
-        .textcontainer {
-          flex-wrap: wrap;
-          justify-content: center;
-
-          .titlecontainer {
-            flex-direction: column;
-
-            h2 {
-              font-size: 1.3rem;
-            }
-
-            .line {
-              width: 80px;
-              height: 2px;
-              margin: 5px 0 0 0;
-            }
-          }
-
-          p {
-            padding: 1rem 0 1.5rem 0;
-            font-size: 0.9rem;
-          }
-        }
-
         .cardcontainer {
           @keyframes scrollInfinito {
             to {
               translate: calc(-50% - 5px);
             }
           }
-
           .specialistscards {
             gap: 2rem;
             overflow-x: scroll;
-
             .cards {
               padding: 0 0 0.6rem 0;
               width: 13rem;
-              transform: translateX(8rem);
-
+              transform: translateX(2rem);
               .cardinfocontainer {
                 font-size: 0.8rem;
               }
             }
-          }
-        }
-
-      }
-    }
-
-  }
-
-  #certified {
-    flex-direction: column;
-    padding: 1.5rem 5%;
-    margin-top: 0;
-    gap: 0;
-
-    .certifiedtexts {
-      h2 {
-        text-align: center;
-        font-size: 1.3rem;
-      }
-
-      .line {
-        align-self: center;
-        width: 80px;
-      }
-
-      p {
-        margin: 1rem 0 1.5rem 0;
-        font-size: 0.9rem;
-      }
-    }
-
-    .certifiedcontainer {
-      justify-content: center;
-      flex-wrap: wrap;
-
-      .certifications {
-        text-align: center;
-
-        img {
-          height: 10vh;
-        }
-
-        p {
-          font-size: 0.7rem;
-        }
-      }
-    }
-  }
-
-  #contact {
-    padding: 1.5rem 5% 2rem 5%;
-    grid-template-columns: none;
-
-    .contacttxt {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-
-      h2 {
-        text-align: center;
-        font-size: 1.3rem;
-      }
-
-      .line {
-        align-self: center;
-        width: 80px;
-      }
-
-      .contactpara {
-        font-size: 0.9rem;
-      }
-
-      .contactpara p:nth-child(2n) {
-        display: none;
-      }
-
-      .contactsocialscontainer {
-        font-size: 0.9rem;
-      }
-    }
-
-    .formcontainer {
-      display: none;
-    }
-  }
-
-  footer {
-    padding: 1rem 5% 2rem 5%;
-    background-position: center;
-
-    .clients {
-      .clientsbox {
-        img {
-          height: 2rem;
-        }
-
-        .airbnb {
-          display: none;
-        }
-
-        .adidas {
-          display: none;
-        }
-      }
-    }
-
-    .footinfos {
-      .addresscontainer {
-        flex-wrap: wrap;
-        justify-content: start;
-        gap: 0.8rem;
-
-        .address {
-          width: 8.3rem;
-
-          h4 {
-            font-size: 0.7rem;
-          }
-
-          p {
-            font-size: 0.7rem;
-          }
-        }
-      }
-
-      .footnotes {
-        flex-direction: column-reverse;
-        gap: 1rem;
-        font-size: 0.7rem;
-
-        .rightreserved {
-          p:nth-child(1) {
-            display: none;
           }
         }
       }
