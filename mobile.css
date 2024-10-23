@@ -186,17 +186,20 @@
   #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards {
     gap: 2rem;
     overflow-x: scroll;
+    scroll-snap-align: start;
   }
   #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
     padding: 0 0 0.6rem 0;
-    width: 13rem;
-    transform: translateX(rem);
+    width: 12rem;
   }
   #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
     font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 500px) {
+  header .bgmenuimg {
+    height: 22rem;
+  }
   header .menucontainer .menu .logobox .logoimg {
     width: 3rem;
   }
