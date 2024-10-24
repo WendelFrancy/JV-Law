@@ -274,6 +274,11 @@
             overflow-x: scroll;
             scroll-snap-align: start;
 
+            @media screen and (max-width: 712px) {
+              justify-content: start;
+              padding-left: 0.3rem;
+            }
+
             .cards {
               padding: 0 0 0.6rem 0;
               width: 12rem;
@@ -310,6 +315,32 @@
     }
   }
 
+  #aboutus {
+    .aboutuscontainer {
+      .aboutustexts {
+
+        p {
+          font-size: 0.8rem;
+
+          &:nth-child(2n+2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  #contact {
+
+    .socialbox {
+      max-height: 2rem;
+      max-width: 3rem;
+
+      img {
+        width: 1.1rem;
+      }
+    }
 
 
+  }
 }

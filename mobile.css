@@ -188,6 +188,14 @@
     overflow-x: scroll;
     scroll-snap-align: start;
   }
+}
+@media screen and (max-width: 768px) and (max-width: 712px) {
+  #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards {
+    justify-content: start;
+    padding-left: 0.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
   #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
     padding: 0 0 0.6rem 0;
     width: 12rem;
@@ -205,6 +213,19 @@
   }
   header .menucontainer .menu .logobox p {
     font-size: 0.7rem;
+  }
+  #aboutus .aboutuscontainer .aboutustexts p {
+    font-size: 0.8rem;
+  }
+  #aboutus .aboutuscontainer .aboutustexts p:nth-child(2n+2) {
+    display: none;
+  }
+  #contact .socialbox {
+    max-height: 2rem;
+    max-width: 3rem;
+  }
+  #contact .socialbox img {
+    width: 1.1rem;
   }
 }
 
