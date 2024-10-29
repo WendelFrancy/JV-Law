@@ -1,7 +1,4 @@
 @media screen and (max-width: 900px) {
-  // Done 100%
-
-  // To do
   header {
 
     .bgmenuimg {
@@ -152,7 +149,6 @@
       flex-wrap: wrap;
 
       .certifications {
-        text-align: center;
 
         img {
           height: 10vh;
@@ -257,8 +253,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  // Done 95% - Need to improve the responsiveness from specialists cards
-
   #specialists {
     .specialistscontent {
       .specialistscontainer {
@@ -321,9 +315,20 @@
 
         p {
           font-size: 0.8rem;
+        }
 
-          &:nth-child(2n+2) {
-            display: none;
+        .secondpara {
+          display: none;
+        }
+
+        .readmore {
+          display: none;
+          margin: 1rem 0 0 0;
+
+          p {
+            margin: 0;
+            color: #1a3a61;
+            text-decoration: underline;
           }
         }
       }
@@ -340,7 +345,124 @@
         width: 1.1rem;
       }
     }
-
-
   }
+}
+
+@media screen and (max-width: 440px) {
+
+  .home {
+    .hometextcontainer {
+      padding: 1rem 3%;
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  #aboutus {
+    .aboutuscontainer {
+      .aboutustexts {
+
+        h2 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  #specialists {
+    .specialistscontent {
+      .specialistscontainer {
+        .textcontainer {
+          .titlecontainer {
+            h2 {
+              font-size: 1rem;
+            }
+          }
+
+          p {
+            font-size: 0.7rem;
+          }
+        }
+
+        .cardcontainer {
+          .specialistscards {
+            .cards {
+              width: 10rem;
+
+              .cardinfocontainer {
+                font-size: 0.7rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #certified {
+    .certifiedtexts {
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.7rem;
+      }
+    }
+
+    .certifiedcontainer {
+      .certifications {
+        p {
+          font-size: 0.5rem;
+          width: 7rem;
+        }
+      }
+    }
+  }
+
+  #contact {
+    .contacttxt {
+      h2 {
+        font-size: 1rem;
+      }
+
+      .contactpara {
+        font-size: 0.7rem;
+      }
+
+      .contactsocialscontainer {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  footer {
+    .clients {
+      .clientsbox {
+        img {
+          height: 1.7rem;
+        }
+      }
+    }
+
+    .footinfos {
+      .addresscontainer {
+        .address {
+          width: 8rem;
+        }
+      }
+    }
+  }
+
+
 }

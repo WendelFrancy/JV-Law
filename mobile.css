@@ -103,9 +103,6 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  #certified .certifiedcontainer .certifications {
-    text-align: center;
-  }
   #certified .certifiedcontainer .certifications img {
     height: 10vh;
   }
@@ -217,8 +214,17 @@
   #aboutus .aboutuscontainer .aboutustexts p {
     font-size: 0.8rem;
   }
-  #aboutus .aboutuscontainer .aboutustexts p:nth-child(2n+2) {
+  #aboutus .aboutuscontainer .aboutustexts .secondpara {
     display: none;
+  }
+  #aboutus .aboutuscontainer .aboutustexts .readmore {
+    display: none;
+    margin: 1rem 0 0 0;
+  }
+  #aboutus .aboutuscontainer .aboutustexts .readmore p {
+    margin: 0;
+    color: #1a3a61;
+    text-decoration: underline;
   }
   #contact .socialbox {
     max-height: 2rem;
@@ -226,6 +232,60 @@
   }
   #contact .socialbox img {
     width: 1.1rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .home .hometextcontainer {
+    padding: 1rem 3%;
+  }
+  .home .hometextcontainer h1 {
+    font-size: 1rem;
+  }
+  .home .hometextcontainer p {
+    font-size: 0.7rem;
+  }
+  #aboutus .aboutuscontainer .aboutustexts h2 {
+    font-size: 1rem;
+  }
+  #aboutus .aboutuscontainer .aboutustexts p {
+    font-size: 0.7rem;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer .titlecontainer h2 {
+    font-size: 1rem;
+  }
+  #specialists .specialistscontent .specialistscontainer .textcontainer p {
+    font-size: 0.7rem;
+  }
+  #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
+    width: 10rem;
+  }
+  #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
+    font-size: 0.7rem;
+  }
+  #certified .certifiedtexts h2 {
+    font-size: 1rem;
+  }
+  #certified .certifiedtexts p {
+    font-size: 0.7rem;
+  }
+  #certified .certifiedcontainer .certifications p {
+    font-size: 0.5rem;
+    width: 7rem;
+  }
+  #contact .contacttxt h2 {
+    font-size: 1rem;
+  }
+  #contact .contacttxt .contactpara {
+    font-size: 0.7rem;
+  }
+  #contact .contacttxt .contactsocialscontainer {
+    font-size: 0.7rem;
+  }
+  footer .clients .clientsbox img {
+    height: 1.7rem;
+  }
+  footer .footinfos .addresscontainer .address {
+    width: 8rem;
   }
 }
 
