@@ -340,6 +340,7 @@ header .menucontainer .menu .menutxtbox .menulist li a:hover {
   height: 3rem;
   width: 4rem;
   border: solid 1px #f5d8b7;
+  color: #132944;
 }
 #contact .contacttxt .contactsocialscontainer .contactsocials .socialbox .socialphone {
   max-height: 25px;
