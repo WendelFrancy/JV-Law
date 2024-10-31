@@ -1,4 +1,12 @@
-@media screen and (max-width: 900px) {
+@media screen and (width > 1600px) {
+  #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards {
+    width: 17rem;
+  }
+  #specialists .specialistscontent .specialistscontainer .cardcontainer .specialistscards .cards .cardinfocontainer {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1000px) {
   header .bgmenuimg {
     height: 25rem;
   }
@@ -235,6 +243,9 @@
   }
 }
 @media screen and (max-width: 440px) {
+  .home {
+    height: 14rem;
+  }
   .home .hometextcontainer {
     padding: 1rem 3%;
   }
@@ -243,6 +254,10 @@
   }
   .home .hometextcontainer p {
     font-size: 0.7rem;
+  }
+  #aboutus {
+    position: relative;
+    background-color: white;
   }
   #aboutus .aboutuscontainer .aboutustexts h2 {
     font-size: 1rem;
