@@ -364,34 +364,30 @@
       }
     }
   }
-
-  #contact {
-
-    .socialbox {
-      max-height: 2rem;
-      max-width: 3rem;
-
-      img {
-        width: 1.1rem;
-      }
-    }
-  }
-
+  
   #specialists{
     .specialistscontent{
       .specialistscontainer{
         padding: 2rem 5%;
       }
-
+      
     }
   }
-
+  
   #certified {
     padding: 2rem 5%;
   }
-
+  
   #contact {
     padding: 2rem 5% 2.5rem 5%;
+    .socialbox {
+      max-height: 2rem;
+      max-width: 3rem;
+  
+      img {
+        width: 1.1rem;
+      }
+    }
   }
 }
 
@@ -485,6 +481,9 @@
     .contacttxt {
       h2 {
         font-size: 1rem;
+      }
+      .line{
+        width: 50px;
       }
 
       .contactpara {
