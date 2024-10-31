@@ -90,7 +90,9 @@
       }
 
       .aboutusimg {
-        display: none;
+        img{
+          display: none;
+        }
       }
     }
   }
@@ -329,6 +331,7 @@
   }
 
   #aboutus {
+    padding: 2rem 5%;
     .aboutuscontainer {
       .aboutustexts {
 
@@ -351,6 +354,14 @@
           }
         }
       }
+
+      .aboutusimg {
+        margin-top: 1rem;
+        img{
+          display: flex;
+          width: 15rem;
+        }
+      }
     }
   }
 
@@ -364,6 +375,23 @@
         width: 1.1rem;
       }
     }
+  }
+
+  #specialists{
+    .specialistscontent{
+      .specialistscontainer{
+        padding: 2rem 5%;
+      }
+
+    }
+  }
+
+  #certified {
+    padding: 2rem 5%;
+  }
+
+  #contact {
+    padding: 2rem 5% 2.5rem 5%;
   }
 }
 
@@ -381,6 +409,7 @@
       p {
         font-size: 0.7rem;
       }
+      
     }
   }
 

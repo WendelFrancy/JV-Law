@@ -58,7 +58,7 @@
     margin: 1rem 0 0 0;
     font-size: 0.9rem;
   }
-  #aboutus .aboutuscontainer .aboutusimg {
+  #aboutus .aboutuscontainer .aboutusimg img {
     display: none;
   }
   #specialists .specialistscontent .specialistscontainer {
@@ -219,6 +219,9 @@
   header .menucontainer .menu .logobox p {
     font-size: 0.7rem;
   }
+  #aboutus {
+    padding: 2rem 5%;
+  }
   #aboutus .aboutuscontainer .aboutustexts p {
     font-size: 0.8rem;
   }
@@ -234,12 +237,28 @@
     color: #1a3a61;
     text-decoration: underline;
   }
+  #aboutus .aboutuscontainer .aboutusimg {
+    margin-top: 1rem;
+  }
+  #aboutus .aboutuscontainer .aboutusimg img {
+    display: flex;
+    width: 15rem;
+  }
   #contact .socialbox {
     max-height: 2rem;
     max-width: 3rem;
   }
   #contact .socialbox img {
     width: 1.1rem;
+  }
+  #specialists .specialistscontent .specialistscontainer {
+    padding: 2rem 5%;
+  }
+  #certified {
+    padding: 2rem 5%;
+  }
+  #contact {
+    padding: 2rem 5% 2.5rem 5%;
   }
 }
 @media screen and (max-width: 440px) {
